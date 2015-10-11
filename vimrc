@@ -32,7 +32,7 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme jellybeans
+colorscheme gotham
 
 " {--KEY MAPPINGS--}
 
@@ -58,7 +58,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " Airline
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme ='jellybeans'
 
 " let g:airline#extensions#tabline#enabled = 1
 
