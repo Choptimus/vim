@@ -32,8 +32,7 @@ set expandtab
 " Color options
 
 set background=dark
-let g:rehash256 = 1
-colorscheme molokai
+colorscheme jellybeans
 
 " {--KEY MAPPINGS--}
 
