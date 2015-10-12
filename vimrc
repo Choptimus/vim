@@ -32,7 +32,8 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme gotham
+let g:rehash256 = 1
+colorscheme molokai
 
 " {--KEY MAPPINGS--}
 
