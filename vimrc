@@ -32,7 +32,7 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme gotham
+colorscheme jellybeans
 
 " {--KEY MAPPINGS--}
 
