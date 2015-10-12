@@ -5,12 +5,17 @@ filetype plugin indent on
 syntax on
 set nu
 
+" neovim
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 " Recommended options
 
 set hidden
 set wildmenu
 set wildmode=longest,list,full
 set showcmd
+
 " set hlsearch " this got really annoying
 
 " Usability options
@@ -32,7 +37,7 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme jellybeans
+colorscheme gruvbox
 
 " {--KEY MAPPINGS--}
 
