@@ -82,3 +82,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor'
 
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+" hard-time
+
+let g:hardtime_default_on = 1
