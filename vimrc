@@ -7,7 +7,7 @@ set nu
 
 " neovim
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Recommended options
 
@@ -37,7 +37,7 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme gruvbox
+colorscheme solarized
 
 " {--KEY MAPPINGS--}
 
