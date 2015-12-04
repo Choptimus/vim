@@ -16,7 +16,7 @@ set wildmenu
 set wildmode=longest,list,full
 set showcmd
 
-" set hlsearch " this got really annoying
+set hlsearch " this got really annoying
 
 " Usability options
 
