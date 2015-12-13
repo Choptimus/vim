@@ -5,9 +5,10 @@ filetype plugin indent on
 syntax on
 set nu
 
-" neovim
+" Leader remap
 
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let mapleader = ","
+let g:mapleader = ","
 
 " Recommended options
 
@@ -39,7 +40,14 @@ set expandtab
 set background=dark
 colorscheme solarized
 
-" {--KEY MAPPINGS--}
+" Navigation
+
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
+" neovim
+
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Minibufexplorer
 
@@ -50,15 +58,8 @@ nnoremap <C-j> :MBEbp<CR>
 " split navigation
 " things here
 
-" {--COMMANDS--}
-
-" Deletes all trailing whitespace in a file
-command DelAllTrailing %s/\s\+$//
-
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
-
-" {--PLUGINS--}
 
 " Syntastic
 
@@ -76,8 +77,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-:command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
-
 " Ctrl-P
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor'
@@ -90,3 +89,9 @@ match OverLength /\%81v.\+/
 " hard-time
 
 let g:hardtime_default_on = 1
+
+" Deletes all trailing whitespace in a file
+command DelAllTrailing %s/\s\+$//
+
+" Edit in the pwd
+nmap :ed :edit %:p:h/
