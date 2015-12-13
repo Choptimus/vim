@@ -95,3 +95,7 @@ command DelAllTrailing %s/\s\+$//
 
 " Edit in the pwd
 nmap :ed :edit %:p:h/
+
+" fugitive mappings
+nmap <leader>gw :Gwrite<cr>
+nmap <leader>gc :Gcommit<cr>
