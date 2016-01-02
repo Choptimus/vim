@@ -27,7 +27,7 @@ set clipboard=unnamed
 set laststatus=2
 set autoindent
 set nostartofline
-set noshowmode
+set showmode
 
 " Default indentation options, amend with ftplugins
 
@@ -42,8 +42,9 @@ colorscheme solarized
 
 " Navigation
 
-nmap <C-h> <C-w>h
-nmap <C-l> <C-w>l
+map <leader>h <C-w>h
+map <leader>l <C-w>l
+map <F1> :ls<CR>
 
 " neovim
 
@@ -51,9 +52,9 @@ nmap <C-l> <C-w>l
 
 " Minibufexplorer
 
-map <C-d> :MBEbd<CR>
-nnoremap <C-k> :MBEbn<CR>
-nnoremap <C-j> :MBEbp<CR>
+map <C-d> :bd<CR>
+nnoremap <C-k> :bn<CR>
+nnoremap <C-j> :bp<CR>
 
 " split navigation
 " things here
@@ -65,11 +66,11 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 let g:syntastic_javascript_checkers = ['eslint']
 
-" Airline
-
-let g:airline_powerline_fonts = 1
-
-" let g:airline#extensions#tabline#enabled = 1
+"" Airline
+"
+"let g:airline_powerline_fonts = 1
+"
+"" let g:airline#extensions#tabline#enabled = 1
 
 " NERDTree
 
@@ -89,12 +90,14 @@ match OverLength /\%81v.\+/
 " hard-time
 
 let g:hardtime_default_on = 1
+let g:hardtime_ignore_quickfix = 1
+let g:hardtime_allow_different_key = 1
 
 " Deletes all trailing whitespace in a file
 command DelAllTrailing %s/\s\+$//
 
 " Edit in the pwd
-nmap :ed :edit %:p:h/
+nmap <leader>ed :edit %:p:h/
 
 " fugitive mappings
 nmap <leader>gw :Gwrite<cr>
