@@ -45,6 +45,7 @@ colorscheme solarized
 map <leader>h <C-w>h
 map <leader>l <C-w>l
 map <F1> :ls<CR>
+map <C-a> :ls<CR>:b<Space>
 
 " neovim
 
