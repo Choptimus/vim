@@ -29,7 +29,7 @@ set autoindent
 set nostartofline
 set noshowmode
 
-" Indentation options
+" Default indentation options, amend with ftplugins
 
 set shiftwidth=4
 set softtabstop=4
