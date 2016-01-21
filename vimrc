@@ -38,7 +38,7 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme solarized
+colorscheme gotham
 
 " Navigation
 
@@ -103,3 +103,15 @@ nmap <leader>ed :edit %:p:h/
 " fugitive mappings
 nmap <leader>gw :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
+
+" php syntax config
+let php_var_selector_is_identifier = 1
+
+function! PhpSyntaxOverride()
+    hi! phpMemberSelector ctermfg=white
+endfunction
+
+augroup phpSyntaxOverride
+    autocmd!
+    autocmd FileType php call PhpSyntaxOverride()
+augroup END
