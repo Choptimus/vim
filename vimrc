@@ -38,7 +38,8 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme gotham
+colorscheme solarized
+hi MatchParen cterm=none ctermbg=black ctermfg=1
 
 " Navigation
 
@@ -108,7 +109,6 @@ nmap <leader>gc :Gcommit<cr>
 let php_var_selector_is_identifier = 1
 
 function! PhpSyntaxOverride()
-    hi! phpMemberSelector ctermfg=white
 endfunction
 
 augroup phpSyntaxOverride
