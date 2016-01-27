@@ -54,7 +54,7 @@ map <C-a> :ls<CR>:b<Space>
 
 " Minibufexplorer
 
-map <C-d> :bd<CR>
+map <C-i> :bd<CR>
 nnoremap <C-k> :bn<CR>
 nnoremap <C-j> :bp<CR>
 
