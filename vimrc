@@ -24,7 +24,9 @@ set hlsearch " this got really annoying
 set mouse=nicr
 set backspace=indent,eol,start
 set clipboard=unnamed
+
 set laststatus=2
+
 set autoindent
 set nostartofline
 set showmode
@@ -38,15 +40,15 @@ set expandtab
 " Color options
 
 set background=dark
-colorscheme solarized
-hi MatchParen cterm=none ctermbg=black ctermfg=1
+colorscheme gruvbox
+" hi MatchParen cterm=none ctermbg=black ctermfg=1
 
 " Navigation
 
 map <leader>h <C-w>h
 map <leader>l <C-w>l
 map <F1> :ls<CR>
-map <C-a> :ls<CR>:b<Space>
+map <C-b> :ls<CR>:b<Space>
 
 " neovim
 
@@ -98,12 +100,6 @@ let g:hardtime_allow_different_key = 1
 " Deletes all trailing whitespace in a file
 command DelAllTrailing %s/\s\+$//
 
-" Edit in the pwd
-nmap <leader>ed :edit %:p:h/
-
-" fugitive mappings
-nmap <leader>gw :Gwrite<cr>
-nmap <leader>gc :Gcommit<cr>
 
 " php syntax config
 let php_var_selector_is_identifier = 1
@@ -115,3 +111,20 @@ augroup phpSyntaxOverride
     autocmd!
     autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+" background color erase then redraw
+set t_ut=
+
+"<!--- MAPPINGS --!>"
+
+" saving and quitting
+noremap <leader>w :write<CR>
+noremap <leader>q :quit<CR>
+noremap <leader>x :wq<CR>
+" comma command was clobbered by leader so remap it
+noremap ' ,
+" edit in the pwd
+nmap <leader>ed :edit %:p:h/
+" fugitive mappings
+nmap <leader>gw :Gwrite<cr>
+nmap <leader>gc :Gcommit<cr>
