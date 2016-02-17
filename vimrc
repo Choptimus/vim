@@ -39,8 +39,9 @@ set expandtab
 
 " Color options
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark
-colorscheme gruvbox
+colorscheme apprentice
 " hi MatchParen cterm=none ctermbg=black ctermfg=1
 
 " Navigation
