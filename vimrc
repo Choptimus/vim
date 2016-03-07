@@ -39,9 +39,10 @@ set expandtab
 
 " Color options
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set background=dark
-colorscheme apprentice
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let base16colorspace=256  " Access colors present in 256 colorspace
+set background=light
+colorscheme nebraska
 " hi MatchParen cterm=none ctermbg=black ctermfg=1
 
 " Navigation
@@ -50,10 +51,6 @@ map <leader>h <C-w>h
 map <leader>l <C-w>l
 map <F1> :ls<CR>
 map <C-b> :ls<CR>:b<Space>
-
-" neovim
-
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Minibufexplorer
 
@@ -70,12 +67,6 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " Syntastic
 
 let g:syntastic_javascript_checkers = ['eslint']
-
-"" Airline
-"
-"let g:airline_powerline_fonts = 1
-"
-"" let g:airline#extensions#tabline#enabled = 1
 
 " NERDTree
 
