@@ -40,10 +40,8 @@ set expandtab
 " Color options
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" let base16colorspace=256  " Access colors present in 256 colorspace
 set background=light
 colorscheme nebraska
-" hi MatchParen cterm=none ctermbg=black ctermfg=1
 
 " Navigation
 
