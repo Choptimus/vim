@@ -25,6 +25,8 @@ set mouse=nicr
 set backspace=indent,eol,start
 set clipboard=unnamed
 
+set foldmethod=marker
+
 set laststatus=2
 
 set autoindent
@@ -40,8 +42,9 @@ set expandtab
 " Color options
 
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set background=light
-colorscheme nebraska
+set background=dark
+let base16colorspace=256
+colorscheme base16-ocean
 
 " Navigation
 
