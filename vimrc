@@ -41,9 +41,10 @@ set expandtab
 
 " Color options
 
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" can cause issues with non-gui themes
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark
-let base16colorspace=256
+" let base16colorspace=256
 colorscheme base16-ocean
 
 " Navigation
