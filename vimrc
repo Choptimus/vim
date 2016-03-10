@@ -16,6 +16,7 @@ set hidden
 set wildmenu
 set wildmode=longest,list,full
 set showcmd
+set linebreak " break on lines but not words
 
 set hlsearch " this got really annoying
 
@@ -28,6 +29,7 @@ set clipboard=unnamed
 set foldmethod=marker
 
 set laststatus=2
+set ruler
 
 set autoindent
 set nostartofline
