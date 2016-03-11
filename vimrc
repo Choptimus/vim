@@ -43,10 +43,11 @@ set expandtab
 
 " Color options
 
+" can cause issues with non-gui themes
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set t_Co=256
 set background=dark
-let base16colorspace=256
-colorscheme base16-ocean
+colorscheme shblah
 
 " Navigation
 
@@ -55,11 +56,19 @@ map <leader>l <C-w>l
 map <F1> :ls<CR>
 map <C-b> :ls<CR>:b<Space>
 
-" Minibufexplorer
-
-map <C-i> :bd<CR>
-nnoremap <C-k> :bn<CR>
-nnoremap <C-j> :bp<CR>
+" lightline
+let g:lightline = {
+    \ 'colorscheme': 'cloudy',
+    \ 'active': {
+    \   'left': [ [ 'filename' ],
+    \             [ 'readonly', 'fugitive' ] ],
+    \   'right': [ [ 'percent', 'lineinfo' ],
+    \              [ 'fileencoding', 'filetype' ],
+    \              [ 'fileformat', 'syntastic' ] ]
+    \ },
+    \ 'separator': { 'left': '▓▒░', 'right': '░▒▓' },
+    \ 'subseparator': { 'left': '▒', 'right': '░' }
+    \ }
 
 " split navigation
 " things here
@@ -70,12 +79,6 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " Syntastic
 
 let g:syntastic_javascript_checkers = ['eslint']
-
-" NERDTree
-
-map <C-n> :NERDTreeToggle<CR>
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Ctrl-P
 let g:ctrlp_cmd = 'CtrlPMixed'
@@ -108,7 +111,7 @@ augroup phpSyntaxOverride
 augroup END
 
 " background color erase then redraw
-set t_ut=
+" set t_ut=
 
 "<!--- MAPPINGS --!>"
 
