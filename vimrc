@@ -62,7 +62,7 @@ map <C-k> :bn<cr>
 let g:lightline = {
     \ 'colorscheme': 'cloudy',
     \ 'active': {
-    \   'left': [ [ 'filename' ],
+    \   'left': [ [ 'filename', 'modified' ],
     \             [ 'readonly', 'fugitive' ] ],
     \   'right': [ [ 'percent', 'lineinfo' ],
     \              [ 'fileencoding', 'filetype' ],
