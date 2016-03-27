@@ -8,6 +8,7 @@ set nu
 " Leader remap
 
 let mapleader = ","
+let maplocalleader = "\\"
 let g:mapleader = ","
 
 " Recommended options
@@ -128,3 +129,5 @@ nmap <leader>ed :edit %:p:h/
 " fugitive mappings
 nmap <leader>gw :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
+
+source $HOME/.vim/vimrc-local
