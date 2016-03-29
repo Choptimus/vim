@@ -44,10 +44,10 @@ set expandtab
 " Color options
 
 " can cause issues with non-gui themes
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set t_Co=256
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" set t_Co=256
 set background=dark
-colorscheme shblah
+colorscheme base16-ocean
 
 " Navigation
 
@@ -58,20 +58,6 @@ map <C-b> :ls<CR>:b<Space>
 map <C-i> :bd<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
-
-" lightline
-let g:lightline = {
-    \ 'colorscheme': 'cloudy',
-    \ 'active': {
-    \   'left': [ [ 'filename', 'modified' ],
-    \             [ 'readonly', 'fugitive' ] ],
-    \   'right': [ [ 'percent', 'lineinfo' ],
-    \              [ 'fileencoding', 'filetype' ],
-    \              [ 'fileformat', 'syntastic' ] ]
-    \ },
-    \ 'separator': { 'left': '▓▒░', 'right': '░▒▓' },
-    \ 'subseparator': { 'left': '▒', 'right': '░' }
-    \ }
 
 " split navigation
 " things here
