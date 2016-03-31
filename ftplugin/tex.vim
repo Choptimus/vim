@@ -1,3 +1,3 @@
-set spell spelllang=en_gb
+setlocal spl=en_gb spell
 
 match OverLength /a^/

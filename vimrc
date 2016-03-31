@@ -8,6 +8,7 @@ set nu
 " Leader remap
 
 let mapleader = ","
+let maplocalleader = "\\"
 let g:mapleader = ","
 
 " Recommended options
@@ -44,10 +45,10 @@ set expandtab
 " Color options
 
 " can cause issues with non-gui themes
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set t_Co=256
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" set t_Co=256
 set background=dark
-colorscheme shblah
+colorscheme base16-ocean
 
 " Navigation
 
@@ -55,20 +56,9 @@ map <leader>h <C-w>h
 map <leader>l <C-w>l
 map <F1> :ls<CR>
 map <C-b> :ls<CR>:b<Space>
-
-" lightline
-let g:lightline = {
-    \ 'colorscheme': 'cloudy',
-    \ 'active': {
-    \   'left': [ [ 'filename' ],
-    \             [ 'readonly', 'fugitive' ] ],
-    \   'right': [ [ 'percent', 'lineinfo' ],
-    \              [ 'fileencoding', 'filetype' ],
-    \              [ 'fileformat', 'syntastic' ] ]
-    \ },
-    \ 'separator': { 'left': '▓▒░', 'right': '░▒▓' },
-    \ 'subseparator': { 'left': '▒', 'right': '░' }
-    \ }
+map <C-i> :bd<cr>
+map <C-j> :bp<cr>
+map <C-k> :bn<cr>
 
 " split navigation
 " things here
@@ -126,3 +116,5 @@ nmap <leader>ed :edit %:p:h/
 " fugitive mappings
 nmap <leader>gw :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
+
+source $HOME/.vim/vimrc-local
