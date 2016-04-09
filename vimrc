@@ -45,10 +45,14 @@ set expandtab
 " Color options
 
 " can cause issues with non-gui themes
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" set t_Co=256
 set background=dark
-colorscheme base16-ocean
+if has ('nvim')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    colorscheme base16-ocean
+else
+    set t_Co=256
+    colorscheme shblah
+endif
 
 " Navigation
 
@@ -104,6 +108,9 @@ augroup END
 " set t_ut=
 
 "<!--- MAPPINGS --!>"
+
+" ctrl-c exits insert
+noremap <ctrl-c> <esc>
 
 " saving and quitting
 noremap <leader>w :write<CR>
