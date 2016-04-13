@@ -51,7 +51,7 @@ if has ('nvim')
     colorscheme base16-ocean
 else
     set t_Co=256
-    colorscheme shblah
+    colorscheme apprentice
 endif
 
 " Navigation
@@ -60,7 +60,7 @@ map <leader>h <C-w>h
 map <leader>l <C-w>l
 map <F1> :ls<CR>
 map <C-b> :ls<CR>:b<Space>
-map <C-i> :bd<cr>
+map <C-x> :bd<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
 
