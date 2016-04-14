@@ -25,7 +25,7 @@ set hlsearch " this got really annoying
 
 set mouse=nicr
 set backspace=indent,eol,start
-set clipboard=unnamed
+" set clipboard=unnamed
 
 set foldmethod=marker
 
@@ -44,14 +44,14 @@ set expandtab
 
 " Color options
 
-" can cause issues with non-gui themes
 set background=dark
 if has ('nvim')
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    colorscheme base16-ocean
-else
+    " can cause issues with non-gui themes
+    " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     set t_Co=256
-    colorscheme apprentice
+    colorscheme shblah
+else
+    colorscheme shblah
 endif
 
 " Navigation
