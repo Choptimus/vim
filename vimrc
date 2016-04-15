@@ -80,8 +80,14 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor'
 
 " highlight options
 
+" highlight for lines longer than 80 characters
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+
+" highlights all columns after the 80th column
+" match OverLength /\%81v.\+/
+
+" highlights just the 81st column
+match OverLength /\%81v/
 
 " hard-time
 
