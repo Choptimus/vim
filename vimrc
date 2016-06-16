@@ -42,7 +42,11 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-" Color options
+" Autocompletion
+" Don't use ctags in autocomplete
+set cpt-=t
+
+" <!--- COLORS ---!>
 
 set background=dark
 if has ('nvim')
@@ -54,31 +58,7 @@ else
     colorscheme shblah
 endif
 
-" Navigation
-
-map <leader>h <C-w>h
-map <leader>l <C-w>l
-map <F1> :ls<CR>
-map <C-b> :ls<CR>:b<Space>
-map <C-x> :bd<cr>
-map <C-j> :bp<cr>
-map <C-k> :bn<cr>
-
-" split navigation
-" things here
-
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
-
-" Syntastic
-
-let g:syntastic_javascript_checkers = ['eslint']
-
-" Ctrl-P
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor'
-
-" highlight options
+" <!-- HIGHLIGHTS --!>
 
 " highlight for lines longer than 80 characters
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
@@ -89,45 +69,62 @@ highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
 " highlights just the 81st column
 match OverLength /\%81v/
 
-" hard-time
+" Saving and quitting
+noremap <leader>w :write<CR>
+noremap <leader>q :quit<CR>
+noremap <leader>x :wq<CR>
 
-let g:hardtime_default_on = 1
-let g:hardtime_ignore_quickfix = 1
-let g:hardtime_allow_different_key = 1
+" Splits
+set splitbelow
+set splitright
+
+map <leader>h <C-w>h
+map <leader>l <C-w>l
+
+" Buffers
+map <F1> :ls<cr>
+map <C-b> :CtrlPBuffer<cr>
+map <C-l> :CtrlPBufTag<cr>
+map <C-x> :bd<cr>
+map <C-j> :bp<cr>
+map <C-k> :bn<cr>
+
+" Redraws the screen and removes any search highlighting.
+nnoremap <silent> <leader>l :nohl<CR>
+
+" Comma command was clobbered by leader so remap it
+noremap ' ,
+
+" Edit in the pwd
+nmap <leader>ed :edit %:p:h/
+
+" Fugitive mappings
+nmap <leader>gw :Gwrite<cr>
+nmap <leader>gc :Gcommit<cr>
 
 " Deletes all trailing whitespace in a file
 command DelAllTrailing %s/\s\+$//
 
+" | PLUGINS |
 
-" php syntax config
+" <!--- HARDTIME ---!>
+let g:hardtime_default_on = 0
+let g:hardtime_ignore_quickfix = 1
+let g:hardtime_allow_different_key = 1
+
+" <!--- SYNTASTIC ---!>
+let g:syntastic_javascript_checkers = ['eslint']
+
+" <!-- CTRL-P ---!>
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor)$\|/media',
+  \ 'file': '\v\.(exe|so|dll|fls|log|aux|pdf|fdb_latexmk)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+" <!-- PHP --!>
 let php_var_selector_is_identifier = 1
 
-function! PhpSyntaxOverride()
-endfunction
-
-augroup phpSyntaxOverride
-    autocmd!
-    autocmd FileType php call PhpSyntaxOverride()
-augroup END
-
-" background color erase then redraw
-" set t_ut=
-
-"<!--- MAPPINGS --!>"
-
-" ctrl-c exits insert
-noremap <ctrl-c> <esc>
-
-" saving and quitting
-noremap <leader>w :write<CR>
-noremap <leader>q :quit<CR>
-noremap <leader>x :wq<CR>
-" comma command was clobbered by leader so remap it
-noremap ' ,
-" edit in the pwd
-nmap <leader>ed :edit %:p:h/
-" fugitive mappings
-nmap <leader>gw :Gwrite<cr>
-nmap <leader>gc :Gcommit<cr>
-
+" <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
