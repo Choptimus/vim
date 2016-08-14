@@ -116,8 +116,7 @@ let g:hardtime_allow_different_key = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 " <!-- CTRL-P ---!>
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlpp_follow_symlinks = 0
+let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor)$\|/media',
   \ 'file': '\v\.(exe|so|dll|fls|log|aux|pdf|fdb_latexmk)$',
