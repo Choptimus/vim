@@ -52,7 +52,6 @@ set background=dark
 if has ('nvim')
     " can cause issues with non-gui themes
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    set t_Co=256
     colorscheme shblah
 else
     colorscheme shblah
