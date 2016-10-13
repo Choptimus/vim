@@ -42,7 +42,7 @@ if has ('nvim')
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     colorscheme shblah
 else
-    colorscheme shblah
+    colorscheme shblah_orig
 endif
 
 " <!-- HIGHLIGHTS --!>
@@ -75,8 +75,16 @@ map <C-x> :bd<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
 
+<<<<<<< HEAD
 " Get rid of search highlighting
 nnoremap <cr> :nohlsearch<CR>
+=======
+" Redraws the screen and removes any search highlighting.
+nnoremap <cr> :nohlsearch<CR>
+
+" Comma command was clobbered by leader so remap it
+noremap ' ,
+>>>>>>> dda77966cfd370763c9753df9a8e5d5218c77b52
 
 " Edit in the pwd
 nmap <leader>ed :edit %:p:h/
