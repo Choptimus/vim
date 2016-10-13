@@ -75,11 +75,8 @@ map <C-x> :bd<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
 
-" Redraws the screen and removes any search highlighting.
+" Get rid of search highlighting
 nnoremap <cr> :nohlsearch<CR>
-
-" Comma command was clobbered by leader so remap it
-noremap ' ,
 
 " Edit in the pwd
 nmap <leader>ed :edit %:p:h/
