@@ -40,9 +40,9 @@ set keywordprg=:help
 set background=dark
 if has ('nvim')
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    colorscheme shblah_orig
+    colorscheme shblah
 else
-    colorscheme shblah_orig
+    colorscheme shblah
 endif
 
 " <!-- HIGHLIGHTS --!>
