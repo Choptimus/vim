@@ -1,56 +1,44 @@
-" Pretty much mandatory
+" <!-- General usability options --!>
 
 execute pathogen#infect()
 filetype plugin indent on
 syntax on
 set nu
-
 " Leader remap
-
 let mapleader = ","
 let maplocalleader = "\\"
 let g:mapleader = ","
-
-" Recommended options
-
 set hidden
 set wildmenu
 set wildmode=longest,list,full
 set showcmd
-set linebreak " break on lines but not words
-
-set hlsearch " this got really annoying
-
-" Usability options
-
-set mouse=nicr
+set linebreak
+set hlsearch
 set backspace=indent,eol,start
 " set clipboard=unnamed
-
-set foldmethod=marker
-
+set fdm=marker
+" Statusline
 set laststatus=2
 set ruler
-
+set showmode
+" indentation options
 set autoindent
 set nostartofline
-set showmode
-
-" Default indentation options, amend with ftplugins
-
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
-" Autocompletion
 " Don't use ctags in autocomplete
 set cpt-=t
+set nojoinspaces
+" If a file is changed outside of vim, automatically reload it without asking
+set autoread
+" Make K use :help instead of man pages
+set keywordprg=:help
 
-" <!--- COLORS ---!>
+" <!-- COLORS --!>
 
 set background=dark
 if has ('nvim')
-    " can cause issues with non-gui themes
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     colorscheme shblah
 else
@@ -62,11 +50,10 @@ endif
 " highlight for lines longer than 80 characters
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
 
-" highlights all columns after the 80th column
-" match OverLength /\%81v.\+/
-
 " highlights just the 81st column
 match OverLength /\%81v/
+
+" <!-- MISC KEY MAPPINGS --!>
 
 " Saving and quitting
 noremap <leader>w :write<CR>
@@ -88,11 +75,8 @@ map <C-x> :bd<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
 
-" Redraws the screen and removes any search highlighting.
-nnoremap <silent> <leader>l :nohl<CR>
-
-" Comma command was clobbered by leader so remap it
-noremap ' ,
+" Get rid of search highlighting
+nnoremap <cr> :nohlsearch<CR>
 
 " Edit in the pwd
 nmap <leader>ed :edit %:p:h/
@@ -104,7 +88,9 @@ nmap <leader>gc :Gcommit<cr>
 " Deletes all trailing whitespace in a file
 command DelAllTrailing %s/\s\+$//
 
-" | PLUGINS |
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " <!--- HARDTIME ---!>
 let g:hardtime_default_on = 0
