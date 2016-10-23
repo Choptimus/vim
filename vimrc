@@ -113,3 +113,6 @@ let php_var_selector_is_identifier = 1
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
+
+" <!--- Fugitive ---!>
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
