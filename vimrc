@@ -71,7 +71,7 @@ map <leader>l <C-w>l
 map <F1> :ls<cr>
 map <C-b> :CtrlPBuffer<cr>
 map <C-l> :CtrlPBufTag<cr>
-map <C-x> :bd<cr>
+map <C-x> :bp\|bd #<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
 
