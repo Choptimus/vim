@@ -1,13 +1,14 @@
-" <!-- General usability options --!>
-
+" Mandatory
 execute pathogen#infect()
 filetype plugin indent on
 syntax on
 set nu
+
 " Leader remap
 let mapleader = ","
 let maplocalleader = "\\"
 let g:mapleader = ","
+
 set hidden
 set wildmenu
 set wildmode=longest,list,full
@@ -15,29 +16,50 @@ set showcmd
 set linebreak
 set hlsearch
 set backspace=indent,eol,start
+
 " set clipboard=unnamed
 set fdm=marker
+
 " Statusline
 set laststatus=2
 set ruler
 set showmode
+
 " indentation options
 set autoindent
 set nostartofline
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
 " Don't use ctags in autocomplete
 set cpt-=t
+
 set nojoinspaces
+
 " If a file is changed outside of vim, automatically reload it without asking
 set autoread
-" Make K use :help instead of man pages
-set keywordprg=:help
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+
+" Properly disable sound on errors on MacVim
+if has("gui_macvim")
+    autocmd GUIEnter * set vb t_vb=
+    " While we're here, set the font as well
+    set guifont=Source\ Code\ Pro\:h15
+    " and also remove the right and left scrollbars
+    set guioptions-=r
+    set guioptions-=L
+endif
 
 " <!-- COLORS --!>
 
 set background=dark
+"if has("gui_macvim")
+"    colorscheme base16-ocean
 if has ('nvim')
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     colorscheme shblah
@@ -48,7 +70,7 @@ endif
 " <!-- HIGHLIGHTS --!>
 
 " highlight for lines longer than 80 characters
-highlight OverLength ctermbg=darkgray ctermfg=white guibg=#592929
+highlight OverLength ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 
 " highlights just the 81st column
 match OverLength /\%81v/
