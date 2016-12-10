@@ -48,19 +48,19 @@ set t_vb=
 " Properly disable sound on errors on MacVim
 if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
-    " While we're here, set the font as well
-    set guifont=Source\ Code\ Pro\:h15
-    " and also remove the right and left scrollbars
-    set guioptions-=r
-    set guioptions-=L
 endif
 
 " <!-- COLORS --!>
 
 set background=dark
-"if has("gui_macvim")
-"    colorscheme base16-ocean
-if has ('nvim')
+" color and styling options for macvim
+if has("gui_macvim")
+    colorscheme cloudy-gui
+
+    set guifont=Source\ Code\ Pro\:h15
+    set guioptions-=r
+    set guioptions-=L
+elseif has ('nvim')
     " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     colorscheme shblah
 else

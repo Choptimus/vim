@@ -16,53 +16,53 @@ endif
 let g:colors_name="shblah_orig"
 
 " Actual colours and styles.
-highlight ColorColumn  term=NONE cterm=NONE ctermfg=NONE ctermbg=3
-highlight Comment      term=NONE cterm=NONE ctermfg=8    ctermbg=NONE
-highlight Constant     term=NONE cterm=NONE ctermfg=6    ctermbg=NONE
-highlight Cursor       term=NONE cterm=bold ctermfg=3    ctermbg=NONE
-highlight CursorLine   term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE
-highlight DiffAdd      term=NONE cterm=bold ctermfg=2    ctermbg=NONE
-highlight DiffChange   term=NONE cterm=bold ctermfg=NONE ctermbg=NONE
-highlight DiffDelete   term=NONE cterm=bold ctermfg=7    ctermbg=1
-highlight DiffText     term=NONE cterm=bold ctermfg=7    ctermbg=4
-highlight Directory    term=NONE cterm=bold ctermfg=4    ctermbg=0
-highlight Error        term=NONE cterm=NONE ctermfg=0    ctermbg=1
-highlight ErrorMsg     term=NONE cterm=bold ctermfg=1    ctermbg=0
-highlight FoldColumn   term=NONE cterm=bold ctermfg=0    ctermbg=NONE
-highlight Folded       term=NONE cterm=bold ctermfg=0    ctermbg=NONE
-highlight Function     term=NONE cterm=bold ctermfg=5    ctermbg=NONE
-highlight Identifier   term=NONE cterm=NONE ctermfg=1    ctermbg=NONE
-highlight IncSearch    term=NONE cterm=bold ctermfg=5    ctermbg=5
-highlight NonText      term=NONE cterm=bold ctermfg=8    ctermbg=NONE
-highlight Normal       term=NONE cterm=NONE ctermfg=7    ctermbg=NONE
-highlight Pmenu        term=NONE cterm=NONE ctermfg=0    ctermbg=7
-highlight PreProc      term=NONE cterm=bold ctermfg=6    ctermbg=NONE
-highlight Search       term=NONE cterm=bold ctermfg=7    ctermbg=5
-highlight Special      term=NONE cterm=NONE ctermfg=2    ctermbg=NONE
-highlight SpecialKey   term=NONE cterm=NONE ctermfg=0    ctermbg=NONE
-highlight Statement    term=NONE cterm=NONE ctermfg=4    ctermbg=NONE
-highlight StatusLine   term=NONE cterm=bold ctermfg=8    ctermbg=NONE
-" highlight StatusLineNC term=NONE cterm=bold ctermfg=0    ctermbg=NONE
-highlight String       term=NONE cterm=NONE ctermfg=2    ctermbg=NONE
-highlight TabLineSel   term=NONE cterm=bold ctermfg=7    ctermbg=NONE
-highlight Todo         term=NONE cterm=bold ctermfg=7    ctermbg=1
-highlight Type         term=NONE cterm=bold ctermfg=4    ctermbg=NONE
-highlight Underlined   term=underline cterm=underline ctermfg=NONE   ctermbg=NONE
-highlight VertSplit    term=NONE cterm=bold ctermfg=0    ctermbg=NONE
-highlight Visual       term=NONE cterm=NONE ctermfg=0    ctermbg=8
-highlight WarningMsg   term=NONE cterm=bold ctermfg=3    ctermbg=NONE
+highlight CursorLine   term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+highlight ColorColumn  term=NONE cterm=NONE ctermfg=NONE ctermbg=3 guifg=#273941 guibg=#a6a663
+highlight Comment      term=NONE cterm=NONE ctermfg=8 ctermbg=NONE guifg=#456472 guibg=#273941
+highlight Constant     term=NONE cterm=NONE ctermfg=6 ctermbg=NONE guifg=#63a69b guibg=#273941
+highlight Cursor       term=NONE cterm=bold ctermfg=3 ctermbg=NONE guibg=#c0c5ce
+highlight DiffAdd      term=NONE cterm=bold ctermfg=2 ctermbg=NONE guifg=#63a690 guibg=#273941
+highlight DiffChange   term=NONE cterm=bold ctermfg=NONE ctermbg=NONE guifg=#273941 guibg=#273941
+highlight DiffDelete   term=NONE cterm=bold ctermfg=7 ctermbg=1 guifg=#c0c5ce guibg=#a66363
+highlight DiffText     term=NONE cterm=bold ctermfg=7 ctermbg=4 guifg=#c0c5ce guibg=#6385a6
+highlight Directory    term=NONE cterm=bold ctermfg=4 ctermbg=0 guifg=#6385a6 guibg=#273941
+highlight Error        term=NONE cterm=NONE ctermfg=0 ctermbg=1 guifg=#273941 guibg=#a66363
+highlight ErrorMsg     term=NONE cterm=bold ctermfg=1 ctermbg=0 guifg=#a66363 guibg=#273941
+highlight FoldColumn   term=NONE cterm=bold ctermfg=0 ctermbg=NONE guifg=#273941 guibg=#273941
+highlight Folded       term=NONE cterm=bold ctermfg=0 ctermbg=NONE guifg=#273941 guibg=#273941
+highlight Function     term=NONE cterm=bold ctermfg=5 ctermbg=NONE guifg=#bf9c86 guibg=#273941
+highlight Identifier   term=NONE cterm=NONE ctermfg=1 ctermbg=NONE guifg=#a66363 guibg=#273941
+highlight IncSearch    term=NONE cterm=bold ctermfg=5 ctermbg=5 guifg=#bf9c86 guibg=#bf9c86
+highlight NonText      term=NONE cterm=bold ctermfg=8 ctermbg=NONE guifg=#456472 guibg=#273941
+highlight Normal       term=NONE cterm=NONE ctermfg=7 ctermbg=NONE guifg=#c0c5ce guibg=#273941
+highlight Pmenu        term=NONE cterm=NONE ctermfg=0 ctermbg=7 guifg=#273941 guibg=#c0c5ce
+highlight PreProc      term=NONE cterm=bold ctermfg=6 ctermbg=NONE guifg=#63a69b guibg=#273941
+highlight Search       term=NONE cterm=bold ctermfg=7 ctermbg=5 guifg=#c0c5ce guibg=#bf9c86
+highlight Special      term=NONE cterm=NONE ctermfg=2 ctermbg=NONE guifg=#63a690 guibg=#273941
+highlight SpecialKey   term=NONE cterm=NONE ctermfg=0 ctermbg=NONE guifg=#273941 guibg=#273941
+highlight Statement    term=NONE cterm=NONE ctermfg=4 ctermbg=NONE guifg=#6385a6 guibg=#273941
+highlight StatusLine   term=NONE cterm=bold ctermfg=8 ctermbg=NONE guifg=#a66363 guibg=#456472
+highlight StatusLineNC term=NONE cterm=bold ctermfg=0 ctermbg=NONE guifg=#273941 guibg=#456472
+highlight String       term=NONE cterm=NONE ctermfg=2 ctermbg=NONE guifg=#63a690 guibg=#273941
+highlight TabLineSel   term=NONE cterm=bold ctermfg=7 ctermbg=NONE guifg=#c0c5ce guibg=#273941
+highlight Todo         term=NONE cterm=bold ctermfg=7 ctermbg=1 guifg=#c0c5ce guibg=#a66363
+highlight Type         term=NONE cterm=bold ctermfg=4 ctermbg=NONE guifg=#6385a6 guibg=#273941
+highlight Underlined   term=underline cterm=underline ctermfg=NONE ctermbg=NONE guifg=#273941 guibg=#273941
+highlight VertSplit    term=NONE cterm=bold ctermfg=0 ctermbg=NONE guifg=#273941 guibg=#273941
+highlight Visual       term=NONE cterm=NONE ctermfg=0 ctermbg=8 guifg=#273941 guibg=#456472
+highlight WarningMsg   term=NONE cterm=bold ctermfg=3 ctermbg=NONE guifg=#a6a663 guibg=#273941
 
 " General highlighting group links.
 highlight! link diffAdded       DiffAdd
 highlight! link diffRemoved     DiffDelete
 highlight! link diffChanged     DiffChange
-highlight! link StatusLineNC    StatusLine
+highlight! link StatusLine      StatusLineNC
 highlight! link Title           Normal
 highlight! link LineNr          NonText
 highlight! link MoreMsg         Normal
 highlight! link Question        DiffChange
-highlight! link TabLine         StatusLineNC
-highlight! link TabLineFill     StatusLineNC
+"highlight! link TabLine         StatusLineNC
+"highlight! link TabLineFill     StatusLineNC
 highlight! link VimHiGroup      VimGroup
 
 " Test the actual colorscheme
