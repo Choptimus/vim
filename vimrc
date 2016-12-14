@@ -17,6 +17,9 @@ set linebreak
 set hlsearch
 set backspace=indent,eol,start
 
+" tell vim where to put swap files
+set directory=$HOME/.local/share/nvim/swap
+
 " set clipboard=unnamed
 set fdm=marker
 
@@ -44,6 +47,11 @@ set autoread
 set noerrorbells
 set novisualbell
 set t_vb=
+
+" trying to stop the changing directory
+if has("gui_macvim")
+    set noautochdir
+endif
 
 " Properly disable sound on errors on MacVim
 if has("gui_macvim")
@@ -122,7 +130,8 @@ let g:hardtime_allow_different_key = 1
 " <!--- SYNTASTIC ---!>
 let g:syntastic_javascript_checkers = ['eslint']
 
-" <!-- CTRL-P ---!>
+" <!-- CtrlP ---!>
+let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor)$\|/media',
@@ -130,11 +139,11 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+" <!--- Fugitive ---!>
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 " <!-- PHP --!>
 let php_var_selector_is_identifier = 1
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
-
-" <!--- Fugitive ---!>
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
