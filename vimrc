@@ -106,7 +106,7 @@ nmap <leader>gw :Gwrite<cr>
 nmap <leader>gc :Gcommit<cr>
 
 " Deletes all trailing whitespace in a file
-command DelAllTrailing %s/\s\+$//
+command Dat %s/\s\+$//
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS "
