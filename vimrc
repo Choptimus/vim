@@ -132,7 +132,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor)$\|/media',
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor)',
   \ 'file': '\v\.(exe|so|dll|fls|log|aux|pdf|fdb_latexmk)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
