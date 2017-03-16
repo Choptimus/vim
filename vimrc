@@ -46,7 +46,7 @@ set autoread
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
-set t_vb=
+set visualbell t_vb=
 
 " trying to stop the changing directory
 if has("gui_macvim")
@@ -63,14 +63,14 @@ endif
 set background=dark
 " color and styling options for macvim
 if has("gui_macvim")
-    colorscheme cloudy-gui
+    colorscheme onedark
 
     set guifont=Source\ Code\ Pro\:h15
     set guioptions-=r
     set guioptions-=L
 elseif has ('nvim')
-    " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    colorscheme shblah
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    colorscheme onedark
 else
     colorscheme shblah
 endif
@@ -115,6 +115,11 @@ nmap <leader>gc :Gcommit<cr>
 
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
+
+" Displays the highlight group under the cursor
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+      \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+      \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS "
