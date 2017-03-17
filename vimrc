@@ -60,20 +60,22 @@ endif
 
 " <!-- COLORS --!>
 
-set background=dark
 " color and styling options for macvim
 if has("gui_macvim")
-    colorscheme onedark
-
     set guifont=Source\ Code\ Pro\:h15
     set guioptions-=r
     set guioptions-=L
-elseif has ('nvim')
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    colorscheme onedark
+endif
+
+if has("termguicolors")
+    set termguicolors
+    set background=dark
+    colorscheme cloudy-gui
 else
+    set background=dark
     colorscheme shblah
 endif
+
 
 " <!-- HIGHLIGHTS --!>
 
