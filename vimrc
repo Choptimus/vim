@@ -70,10 +70,12 @@ endif
 if has("termguicolors")
     set termguicolors
     set background=dark
+    colorscheme onedark
+else
+    set background=dark
+    colorscheme ir_black
 endif
 
-set background=dark
-colorscheme onedark
 
 " <!-- HIGHLIGHTS --!>
 
