@@ -1,10 +1,10 @@
-" Mandatory
+" mandatory
 execute pathogen#infect()
 filetype plugin indent on
 syntax on
 set nu
 
-" Leader remap
+" leader remap
 let mapleader = ","
 let maplocalleader = "\\"
 let g:mapleader = ","
@@ -16,6 +16,7 @@ set showcmd
 set linebreak
 set hlsearch
 set backspace=indent,eol,start
+set winwidth=90
 
 " tell vim where to put swap files
 set directory=$HOME/.local/share/nvim/swap
@@ -23,7 +24,7 @@ set directory=$HOME/.local/share/nvim/swap
 " set clipboard=unnamed
 set fdm=marker
 
-" Statusline
+" statusline
 set laststatus=2
 set ruler
 set showmode
