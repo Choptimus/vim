@@ -22,7 +22,7 @@ set winwidth=90
 set directory=$HOME/.local/share/nvim/swap
 
 " set clipboard=unnamed
-set fdm=marker
+set foldmethod=marker
 
 " statusline
 set laststatus=2
@@ -105,6 +105,7 @@ map <C-l> :CtrlPBufTag<cr>
 map <C-x> :bp\|bd #<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
+map <leader>m :b#<cr>
 
 " Get rid of search highlighting
 nnoremap <cr> :nohlsearch<CR>
