@@ -49,6 +49,9 @@ set noerrorbells
 set novisualbell
 set visualbell t_vb=
 
+" no cursor styling
+set guicursor=
+
 " trying to stop the changing directory
 if has("gui_macvim")
     set noautochdir
@@ -77,7 +80,6 @@ else
     colorscheme ir_black
 endif
 
-
 " <!-- HIGHLIGHTS --!>
 
 " highlight for lines longer than 80 characters
@@ -101,7 +103,7 @@ map <leader>l <C-w>l
 " Buffers
 map <F1> :ls<cr>
 map <C-b> :CtrlPBuffer<cr>
-map <C-l> :CtrlPBufTag<cr>
+map <C-l> :CtrlPTag<cr>
 map <C-x> :bp\|bd #<cr>
 map <C-j> :bp<cr>
 map <C-k> :bn<cr>
@@ -136,6 +138,7 @@ let g:hardtime_allow_different_key = 1
 
 " <!--- SYNTASTIC ---!>
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_rust_checkers = ['cargo']
 
 " <!-- CtrlP ---!>
 let g:ctrlp_working_path_mode = 0
