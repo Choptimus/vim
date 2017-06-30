@@ -18,8 +18,9 @@ set hlsearch
 set backspace=indent,eol,start
 set winwidth=90
 
-" tell vim where to put swap files
-set directory=$HOME/.local/share/nvim/swap
+if has('nvim')
+    set directory=$HOME/.local/share/nvim/swap
+endif
 
 " set clipboard=unnamed
 set foldmethod=marker
@@ -53,12 +54,12 @@ set visualbell t_vb=
 set guicursor=
 
 " trying to stop the changing directory
-if has("gui_macvim")
+if has('gui_macvim')
     set noautochdir
 endif
 
 " Properly disable sound on errors on MacVim
-if has("gui_macvim")
+if has('gui_macvim')
     autocmd GUIEnter * set vb t_vb=
 endif
 
