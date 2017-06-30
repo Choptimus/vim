@@ -22,12 +22,6 @@
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
-[submodule "bundle/vim-jinja"]
-	path = bundle/vim-jinja
-	url = https://github.com/mitsuhiko/vim-jinja.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/haskell-vim"]
 	path = bundle/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
