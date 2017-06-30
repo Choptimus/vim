@@ -137,6 +137,7 @@ let g:hardtime_ignore_quickfix = 1
 let g:hardtime_allow_different_key = 1
 
 " <!--- SYNTASTIC ---!>
+let g:syntastic_python_checkers = ['python']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_rust_checkers = ['cargo']
 
