@@ -78,7 +78,7 @@ if has('termguicolors')
     colorscheme onedark
 else
     set background=dark
-    colorscheme ir_black
+    colorscheme shblah
 endif
 
 " <!-- HIGHLIGHTS --!>
