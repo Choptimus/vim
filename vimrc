@@ -66,13 +66,13 @@ endif
 " <!-- COLORS --!>
 
 " color and styling options for macvim
-if has("gui_macvim")
+if has('gui_macvim')
     set guifont=Source\ Code\ Pro\:h15
     set guioptions-=r
     set guioptions-=L
 endif
 
-if has("termguicolors")
+if has('termguicolors')
     set termguicolors
     set background=dark
     colorscheme onedark
@@ -126,7 +126,7 @@ command Dat %s/\s\+$//
 " Displays the highlight group under the cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
       \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-      \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+      \ . synIDattr(synIDtrans(synID(line('.'),col('.'),1)),'name') . '>'<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS "
