@@ -89,11 +89,6 @@ match OverLength /\%81v/
 
 " <!-- MISC KEY MAPPINGS --!>
 
-" Saving and quitting
-noremap <leader>w :write<CR>
-noremap <leader>q :quit<CR>
-noremap <leader>x :wq<CR>
-
 " Splits
 set splitbelow
 set splitright
