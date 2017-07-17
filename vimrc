@@ -109,7 +109,7 @@ map <leader>m :b#<cr>
 nnoremap <cr> :nohlsearch<CR>
 
 " Edit in the pwd
-nmap <leader>ed :edit %:p:h/
+nmap <leader>ed :edit %:h/
 
 " Fugitive mappings
 nmap <leader>gw :Gwrite<cr>
@@ -151,6 +151,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " <!-- PHP --!>
 let php_var_selector_is_identifier = 1
+
+" Rainbow Parentheses
+autocmd BufRead *.clj RainbowParenthesesToggle
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
