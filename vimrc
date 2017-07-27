@@ -85,7 +85,7 @@ endif
 
 " highlight for lines longer than 80 characters
 highlight OverLength ctermbg=8 ctermfg=white guibg=darkgray guifg=white
-match OverLength /\%81v/
+match OverLength /\%80v/
 
 " <!-- MISC KEY MAPPINGS --!>
 
