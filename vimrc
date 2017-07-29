@@ -149,9 +149,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" <!--- Fugitive ---!>
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
 " <!-- PHP --!>
 let php_var_selector_is_identifier = 1
 
