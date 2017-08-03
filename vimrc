@@ -149,9 +149,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" <!-- PHP --!>
-let php_var_selector_is_identifier = 1
-
 " Rainbow Parentheses
 autocmd BufRead *.clj RainbowParenthesesToggle
 

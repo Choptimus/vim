@@ -10,10 +10,6 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
         branch = master
-[submodule "bundle/php.vim"]
-	path = bundle/php.vim
-	url = https://github.com/StanAngeloff/php.vim.git
-        branch = master
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
