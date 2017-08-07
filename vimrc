@@ -111,10 +111,6 @@ nnoremap <cr> :nohlsearch<CR>
 " Edit in the pwd
 nmap <leader>ed :edit %:h/
 
-" Fugitive mappings
-nmap <leader>gw :Gwrite<cr>
-nmap <leader>gc :Gcommit<cr>
-
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
 
