@@ -145,8 +145,7 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" Rainbow Parentheses
-autocmd BufRead *.clj RainbowParenthesesToggle
+let g:rainbow_active = 0
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
