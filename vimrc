@@ -145,7 +145,14 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+" Rainbow (mostly for clojure)
 let g:rainbow_active = 0
+autocmd BufRead *.clj RainbowToggle
+" onedark gui colors
+let g:rainbow_conf = {
+  \ 'guifgs': ["#e06c75", "#c678dd", "#61afef", "#98c379"],
+  \ 'ctermfgs': ['red', 'blue', 'green', 'magenta'],
+  \ }
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
