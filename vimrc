@@ -152,6 +152,7 @@ autocmd BufRead *.clj RainbowToggle
 let g:rainbow_conf = {
   \ 'guifgs': ["#e06c75", "#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['red', 'blue', 'green', 'magenta'],
+  \ 'parentheses': ['start=/(/ end=/)/ fold']
   \ }
 
 " <!--- Additional NON-PORTABLE config ---!>
