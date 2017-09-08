@@ -46,3 +46,7 @@
 	path = bundle/rainbow
 	url = https://github.com/luochen1990/rainbow
 	branch = master
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+	branch = master
