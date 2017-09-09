@@ -150,8 +150,8 @@ let g:rainbow_active = 0
 autocmd BufRead *.clj RainbowToggleOn
 " onedark gui colors
 let g:rainbow_conf = {
-  \ 'guifgs': ["#e06c75", "#c678dd", "#61afef", "#98c379"],
-  \ 'ctermfgs': ['red', 'blue', 'green', 'magenta'],
+  \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
+  \ 'ctermfgs': ['magenta', 'blue', 'green'],
   \ 'parentheses': ['start=/(/ end=/)/ fold']
   \ }
 
