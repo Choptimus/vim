@@ -142,7 +142,7 @@ let g:ctrlp_custom_ignore = {
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
-autocmd BufRead *.clj RainbowToggleOn
+autocmd BufRead *.clj,*.cljs RainbowToggleOn
 " onedark gui colors
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
