@@ -122,16 +122,12 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " PEP8 check the current file
 map <F7> :!pep8 %<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" PLUGINS "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" <!--- SYNTASTIC ---!>
+" Syntastic
 let g:syntastic_python_checkers = ['python']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_rust_checkers = ['cargo']
 
-" <!-- CtrlP ---!>
+" CtrlP
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
@@ -149,6 +145,10 @@ let g:rainbow_conf = {
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
   \ 'parentheses': ['start=/(/ end=/)/ fold']
   \ }
+
+let g:clojure_fuzzy_indent_patterns = [
+  \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop'
+  \ ]
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
