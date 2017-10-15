@@ -143,7 +143,6 @@ autocmd BufRead *.clj,*.cljs RainbowToggleOn
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
-  \ 'parentheses': ['start=/(/ end=/)/ fold']
   \ }
 
 let g:clojure_fuzzy_indent_patterns = [
