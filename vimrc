@@ -114,14 +114,6 @@ nmap <leader>ed :edit %:h/
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
 
-" Displays the highlight group under the cursor
-map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-      \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-      \ . synIDattr(synIDtrans(synID(line('.'),col('.'),1)),'name') . '>'<CR>
-
-" PEP8 check the current file
-map <F7> :!pep8 %<cr>
-
 " Syntastic
 let g:syntastic_python_checkers = ['python']
 let g:syntastic_javascript_checkers = ['eslint']
