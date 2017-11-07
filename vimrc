@@ -114,10 +114,8 @@ nmap <leader>ed :edit %:h/
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
 
-" Syntastic
-let g:syntastic_python_checkers = ['python']
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_rust_checkers = ['cargo']
+" run Neomake on save
+call neomake#configure#automake('w')
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0
