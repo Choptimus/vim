@@ -114,12 +114,7 @@ nmap <leader>ed :edit %:h/
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
 
-" run Neomake on save
-call neomake#configure#automake('w')
-let g:neomake_warning_sign = {
-            \ 'text': '--',
-            \ 'texthl': 'WarningMsg'
-            \ }
+let g:ale_lint_on_text_changed = 'never'
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0

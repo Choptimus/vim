@@ -46,6 +46,6 @@
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 	branch = master
-[submodule "bundle/neomake"]
-	path = bundle/neomake
-	url = https://github.com/neomake/neomake
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale
