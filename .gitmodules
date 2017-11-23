@@ -49,7 +49,3 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale
-[submodule "bundle/vim-racket"]
-	path = bundle/vim-racket
-	url = https://github.com/wlangstroth/vim-racket
-	branch = master
