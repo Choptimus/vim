@@ -93,20 +93,16 @@ match OverLength /\%80v/
 set splitbelow
 set splitright
 
-map <leader>h <C-w>h
-map <leader>l <C-w>l
-
 " Buffers
-map <F1> :ls<cr>
-map <C-b> :CtrlPBuffer<cr>
-map <C-l> :CtrlPTag<cr>
-map <C-x> :bp\|bd #<cr>
-map <C-j> :bp<cr>
-map <C-k> :bn<cr>
-map <leader>m :b#<cr>
+map <C-B> :CtrlPBuffer<CR>
+map <C-L> :CtrlPTag<CR>
+map <C-X> :bp\|bd #<CR>
+map <C-J> :bp<CR>
+map <C-K> :bn<CR>
+map <C-W>\ :only<CR>
 
 " Get rid of search highlighting
-nnoremap <cr> :nohlsearch<CR>
+nnoremap <CR> :nohlsearch<CR>
 
 " Edit in the pwd
 nmap <leader>ed :edit %:h/
