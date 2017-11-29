@@ -99,7 +99,6 @@ map <C-L> :CtrlPTag<CR>
 map <C-X> :bp\|bd #<CR>
 map <C-J> :bp<CR>
 map <C-K> :bn<CR>
-map <C-W>\ :only<CR>
 
 " Get rid of search highlighting
 nnoremap <CR> :nohlsearch<CR>
