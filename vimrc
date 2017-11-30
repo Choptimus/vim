@@ -109,8 +109,6 @@ nmap <leader>ed :edit %:h/
 " Deletes all trailing whitespace in a file
 command Dat %s/\s\+$//
 
-let g:ale_lint_on_text_changed = 'never'
-
 " CtrlP
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
