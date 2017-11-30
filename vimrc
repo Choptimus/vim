@@ -133,5 +133,7 @@ let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop'
   \ ]
 
+call neomake#configure#automake('nw')
+
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local

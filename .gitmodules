@@ -46,11 +46,11 @@
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 	branch = master
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = https://github.com/w0rp/ale
-        branch = master
 [submodule "bundle/onedark.vim"]
 	path = bundle/onedark.vim
 	url = https://github.com/joshdick/onedark.vim
+	branch = master
+[submodule "bundle/neomake"]
+	path = bundle/neomake
+	url = https://github.com/neomake/neomake
 	branch = master
