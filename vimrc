@@ -81,6 +81,8 @@ else
     colorscheme shblah
 endif
 
+hi clear SignColumn
+
 " <!-- HIGHLIGHTS --!>
 
 " highlight for lines longer than 80 characters
