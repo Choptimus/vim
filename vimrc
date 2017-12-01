@@ -18,9 +18,7 @@ set hlsearch
 set backspace=indent,eol,start
 set winwidth=90
 
-if has('nvim')
-    set directory=$HOME/.local/share/nvim/swap
-endif
+set directory=$HOME/.local/share/nvim/swap
 
 " set clipboard=unnamed
 set foldmethod=marker
@@ -51,14 +49,9 @@ set novisualbell
 set visualbell t_vb=
 
 " <!-- COLORS --!>
-if has('termguicolors')
-    set termguicolors
-    set background=dark
-    colorscheme onedark
-else
-    set background=dark
-    colorscheme shblah
-endif
+set termguicolors
+set background=dark
+colorscheme onedark
 
 " <!-- HIGHLIGHTS --!>
 
@@ -109,8 +102,6 @@ let g:rainbow_conf = {
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop'
   \ ]
-
-call neomake#configure#automake('nw')
 
 " <!--- Additional NON-PORTABLE config ---!>
 source $HOME/.vim/vimrc-local
