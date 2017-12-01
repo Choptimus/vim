@@ -50,7 +50,6 @@
 	path = bundle/onedark.vim
 	url = https://github.com/joshdick/onedark.vim
 	branch = master
-[submodule "bundle/neomake"]
-	path = bundle/neomake
-	url = https://github.com/neomake/neomake
-	branch = master
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale
