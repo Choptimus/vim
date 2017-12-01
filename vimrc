@@ -50,28 +50,7 @@ set noerrorbells
 set novisualbell
 set visualbell t_vb=
 
-" no cursor styling
-set guicursor=
-
-" trying to stop the changing directory
-if has('gui_macvim')
-    set noautochdir
-endif
-
-" Properly disable sound on errors on MacVim
-if has('gui_macvim')
-    autocmd GUIEnter * set vb t_vb=
-endif
-
 " <!-- COLORS --!>
-
-" color and styling options for macvim
-if has('gui_macvim')
-    set guifont=Source\ Code\ Pro\:h15
-    set guioptions-=r
-    set guioptions-=L
-endif
-
 if has('termguicolors')
     set termguicolors
     set background=dark
@@ -80,8 +59,6 @@ else
     set background=dark
     colorscheme shblah
 endif
-
-hi clear SignColumn
 
 " <!-- HIGHLIGHTS --!>
 
