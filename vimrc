@@ -53,14 +53,6 @@ set termguicolors
 set background=dark
 colorscheme onedark
 
-" <!-- HIGHLIGHTS --!>
-
-" highlight for lines longer than 80 characters
-highlight OverLength ctermbg=8 ctermfg=white guibg=darkgray guifg=white
-match OverLength /\%80v/
-
-" <!-- MISC KEY MAPPINGS --!>
-
 " Splits
 set splitbelow
 set splitright
