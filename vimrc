@@ -64,9 +64,6 @@ map <C-X> :bp\|bd #<CR>
 map <C-J> :bp<CR>
 map <C-K> :bn<CR>
 
-" Get rid of search highlighting
-nnoremap <CR> :nohlsearch<CR>
-
 " Edit in the pwd
 nmap <leader>ed :edit %:h/
 
