@@ -10,45 +10,29 @@ let maplocalleader = "\\"
 let g:mapleader = ","
 
 set hidden
-set wildmenu
 set wildmode=longest,list,full
-set showcmd
 set linebreak
-set hlsearch
 set backspace=indent,eol,start
 set winwidth=90
-
 set directory=$HOME/.local/share/nvim/swap
-
-" set clipboard=unnamed
 set foldmethod=marker
 
-" statusline
-set laststatus=2
-set ruler
-set showmode
-
 " indentation options
-set autoindent
-set nostartofline
+set expandtab
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 
 " Don't use ctags in autocomplete
-set cpt-=t
+set complete-=t
 
 set nojoinspaces
-
-" If a file is changed outside of vim, automatically reload it without asking
-set autoread
 
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
 set visualbell t_vb=
 
-" <!-- COLORS --!>
+" Colors
 set termguicolors
 set background=dark
 colorscheme onedark
