@@ -14,8 +14,9 @@ set wildmode=longest,list,full
 set linebreak
 set backspace=indent,eol,start
 set winwidth=90
-set directory=$HOME/.local/share/nvim/swap
+set directory=$HOME/.local/share/vim/swap
 set foldmethod=marker
+set nojoinspaces
 
 " indentation options
 set expandtab
@@ -24,8 +25,6 @@ set softtabstop=4
 
 " Don't use ctags in autocomplete
 set complete-=t
-
-set nojoinspaces
 
 " No annoying sound on errors
 set noerrorbells
@@ -42,8 +41,6 @@ set splitbelow
 set splitright
 
 " Buffers
-map <C-B> :CtrlPBuffer<CR>
-map <C-L> :CtrlPTag<CR>
 map <C-X> :bp\|bd #<CR>
 map <C-J> :bp<CR>
 map <C-K> :bn<CR>
@@ -55,11 +52,13 @@ nmap <leader>ed :edit %:h/
 command Dat %s/\s\+$//
 
 " CtrlP
+map <C-B> :CtrlPBuffer<CR>
+map <C-L> :CtrlPTag<CR>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor|venv)',
-  \ 'file': '\v\.(exe|so|dll|fls|log|aux|pdf|fdb_latexmk|pyc)$',
+  \ 'file': '\v\.(exe|o|so|dll|fls|log|aux|pdf|fdb_latexmk|pyc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
@@ -72,9 +71,10 @@ let g:rainbow_conf = {
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
   \ }
 
+" clojure syntax settings
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop'
   \ ]
 
-" <!--- Additional NON-PORTABLE config ---!>
+" Additional NON-PORTABLE config
 source $HOME/.vim/vimrc-local
