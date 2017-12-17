@@ -26,6 +26,8 @@ set complete-=t
 set noerrorbells
 set novisualbell
 set visualbell t_vb=
+set hlsearch
+set laststatus=2
 
 " Colors
 set termguicolors
