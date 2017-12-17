@@ -17,16 +17,12 @@ set winwidth=90
 set directory=$HOME/.local/share/vim/swap
 set foldmethod=marker
 set nojoinspaces
-
-" indentation options
+set splitbelow
+set splitright
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-
-" Don't use ctags in autocomplete
 set complete-=t
-
-" No annoying sound on errors
 set noerrorbells
 set novisualbell
 set visualbell t_vb=
@@ -35,10 +31,6 @@ set visualbell t_vb=
 set termguicolors
 set background=dark
 colorscheme onedark
-
-" Splits
-set splitbelow
-set splitright
 
 " Buffers
 map <C-X> :bp\|bd #<CR>
