@@ -28,6 +28,7 @@ set novisualbell
 set visualbell t_vb=
 set hlsearch
 set laststatus=2
+set showcmd
 
 " Colors
 set termguicolors
