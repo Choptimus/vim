@@ -7,8 +7,8 @@ set nu
 " leader remap
 let mapleader = ","
 let maplocalleader = "\\"
-let g:mapleader = ","
 
+" general usability settings
 set hidden
 set wildmode=longest,list,full
 set linebreak
@@ -23,15 +23,10 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set complete-=t
-set noerrorbells
-set novisualbell
-set visualbell t_vb=
 set hlsearch
 set laststatus=2
 set showcmd
 set guicursor=
-
-" Colors
 set termguicolors
 set background=dark
 colorscheme onedark
