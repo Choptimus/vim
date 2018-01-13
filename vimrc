@@ -1,14 +1,9 @@
-" mandatory
 execute pathogen#infect()
 filetype plugin indent on
 syntax on
-set nu
-
-" leader remap
-let mapleader = ","
-let maplocalleader = "\\"
 
 " general usability settings
+set number
 set hidden
 set wildmode=longest,list,full
 set linebreak
@@ -30,6 +25,10 @@ set guicursor=
 set termguicolors
 set background=dark
 colorscheme onedark
+
+" leader remap
+let mapleader = ","
+let maplocalleader = "\\"
 
 " Buffers
 map <C-X> :bp\|bd #<CR>
@@ -56,7 +55,6 @@ let g:ctrlp_custom_ignore = {
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
 autocmd BufRead *.clj,*.cljs RainbowToggleOn
-" onedark gui colors
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
