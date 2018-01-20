@@ -39,7 +39,11 @@ map <C-K> :bn<CR>
 nmap <leader>ed :edit %:h/
 
 " Deletes all trailing whitespace in a file
-command Dat %s/\s\+$//
+function! DeleteTrailingWhiteSpace()
+    exec ':%s/\s\+$//'
+    exec ':nohlsearch'
+endfunction
+map <leader>d :call DeleteTrailingWhiteSpace()
 
 " CtrlP
 map <C-B> :CtrlPBuffer<CR>
