@@ -31,9 +31,9 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " Buffers
-map <C-X> :bp\|bd #<CR>
-map <C-J> :bp<CR>
-map <C-K> :bn<CR>
+map <C-X> :bp\|bd #<cr>
+map <C-J> :bp<cr>
+map <C-K> :bn<cr>
 
 " Edit in the pwd
 nmap <leader>ed :edit %:h/
@@ -43,11 +43,23 @@ function! DeleteTrailingWhiteSpace()
     exec ':%s/\s\+$//'
     exec ':nohlsearch'
 endfunction
-map <leader>d :call DeleteTrailingWhiteSpace()
+map <leader>d :call DeleteTrailingWhiteSpace()<cr>
+
+" Renames the current file
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call RenameFile()<cr>
 
 " CtrlP
-map <C-B> :CtrlPBuffer<CR>
-map <C-L> :CtrlPTag<CR>
+map <C-B> :CtrlPBuffer<cr>
+map <C-L> :CtrlPTag<cr>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
