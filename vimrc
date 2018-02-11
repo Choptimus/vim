@@ -2,7 +2,6 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
-" general usability settings
 set number
 set hidden
 set wildmode=longest,list,full
@@ -26,17 +25,13 @@ set termguicolors
 set background=dark
 colorscheme onedark
 
-" leader remap
 let mapleader = ","
 let maplocalleader = "\\"
 
-" Buffers
-map <C-X> :bp\|bd #<cr>
-map <C-J> :bp<cr>
-map <C-K> :bn<cr>
-
-" Edit in the pwd
-nmap <leader>ed :edit %:h/
+map <c-x> :bp\|bd #<cr>
+map <c-j> :bp<cr>
+map <c-k> :bn<cr>
+map <leader>ed :edit %:h/
 
 " Deletes all trailing whitespace in a file
 function! DeleteTrailingWhiteSpace()
@@ -58,8 +53,8 @@ endfunction
 map <leader>n :call RenameFile()<cr>
 
 " CtrlP
-map <C-B> :CtrlPBuffer<cr>
-map <C-L> :CtrlPTag<cr>
+map <c-b> :CtrlPBuffer<cr>
+map <leader>t :CtrlPTag<cr>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
