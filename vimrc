@@ -58,7 +58,7 @@ map <leader>t :CtrlPTag<cr>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 0
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor|venv|build|dist)',
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor|venv|build|dist|target)',
   \ 'file': '\v\.(exe|o|so|dll|fls|log|aux|pdf|fdb_latexmk|pyc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
