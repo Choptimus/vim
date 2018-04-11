@@ -65,7 +65,7 @@ let g:ctrlp_custom_ignore = {
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
-autocmd BufRead *.clj,*.cljs RainbowToggleOn
+autocmd BufRead *.clj,*.cljs,*.cljc RainbowToggleOn
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
