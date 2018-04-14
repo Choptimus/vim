@@ -52,16 +52,39 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
-" CtrlP
-map <c-b> :CtrlPBuffer<cr>
-map <leader>t :CtrlPTag<cr>
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_follow_symlinks = 0
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)|\v[\/](node_modules|vendor|venv|build|dist|target)',
-  \ 'file': '\v\.(exe|o|so|dll|fls|log|aux|pdf|fdb_latexmk|pyc)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+" fzy
+function! FzyCommand(choice_command, vim_command) abort
+    let l:callback = {
+                \ 'window_id': win_getid(),
+                \ 'filename': tempname(),
+                \ 'vim_command': a:vim_command
+                \ }
+
+    function! l:callback.on_exit(job_id, data, event) abort
+        bdelete!
+        call win_gotoid(self.window_id)
+        if filereadable(self.filename)
+            try
+                let l:selected_filename = readfile(self.filename)[0]
+                exec self.vim_command . ' ' . l:selected_filename
+            catch /E684/
+            endtry
+        endif
+        call delete(self.filename)
+    endfunction
+
+    botright 10 new
+    let l:term_command = a:choice_command . ' | fzy > ' .  l:callback.filename
+    silent call termopen(l:term_command, l:callback)
+    setlocal nonumber norelativenumber
+    startinsert
+endfunction
+
+if executable('ag')
+    map <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
+else
+    map <c-p> :call FzyCommand("find -type f", ":e")<cr>
+endif
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
