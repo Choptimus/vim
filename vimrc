@@ -85,6 +85,7 @@ if executable('ag')
 else
     map <c-p> :call FzyCommand("find -type f", ":e")<cr>
 endif
+map <c-b> :call FzyCommand('~/.vim/list-buffers ' . v:servername, ":e")<cr>
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
