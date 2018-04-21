@@ -21,7 +21,10 @@ set hlsearch
 set laststatus=2
 set showcmd
 set guicursor=
-set termguicolors
+
+if has('termguicolors')
+    set termguicolors
+endif
 set background=dark
 colorscheme onedark
 
@@ -103,4 +106,6 @@ let g:clojure_fuzzy_indent_patterns = [
 let g:ale_lint_on_text_changed = 'never'
 
 " Additional NON-PORTABLE config
-source $HOME/.vim/vimrc-local
+if filereadable('vimrc-local')
+    source $HOME/.vim/vimrc-local
+endif
