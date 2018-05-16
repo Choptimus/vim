@@ -93,7 +93,7 @@ map <leader>t :call FzyCommand("cat tags \| awk '{print $1}' \| uniq", ":tag")<c
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
-autocmd BufRead *.clj,*.cljs,*.cljc RainbowToggleOn
+autocmd BufRead *.clj,*.cljs,*.cljc,*.edn RainbowToggleOn
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
