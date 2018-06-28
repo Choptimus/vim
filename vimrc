@@ -36,6 +36,8 @@ map <c-j> :bp<cr>
 map <c-k> :bn<cr>
 map <leader>ed :edit %:h/
 
+autocmd VimResized * redraw!
+
 " Deletes all trailing whitespace in a file
 function! DeleteTrailingWhiteSpace()
     exec ':%s/\s\+$//'
