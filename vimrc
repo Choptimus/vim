@@ -27,9 +27,9 @@ set guicursor=
 
 if has('termguicolors')
     set termguicolors
+    set background=dark
+    colorscheme onedark
 endif
-set background=dark
-colorscheme onedark
 
 let mapleader = ","
 let maplocalleader = "\\"
