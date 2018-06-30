@@ -5,11 +5,11 @@ set nocompatible
 filetype plugin indent on
 syntax on
 
+set wildmenu
+set path+=**
 set number
 set hidden
-set wildmode=longest,list,full
 set linebreak
-set backspace=indent,eol,start
 set winwidth=90
 set directory=$HOME/.local/share/vim/swap
 set foldmethod=marker
