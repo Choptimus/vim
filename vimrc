@@ -34,7 +34,8 @@ endif
 let mapleader = ","
 let maplocalleader = "\\"
 
-map <leader>ed :edit %:h/
+map <leader>ed :edit %:h
+map <F4> :nohl<cr>
 
 autocmd VimResized * redraw!
 
