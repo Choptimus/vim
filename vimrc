@@ -19,7 +19,6 @@ set number
 set hidden
 set linebreak
 set winwidth=90
-set directory=$HOME/.local/share/vim/swap
 set foldmethod=marker
 set splitbelow
 set splitright
