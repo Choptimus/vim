@@ -2,10 +2,18 @@ execute pathogen#infect()
 
 set nocompatible
 
+" These are nvim defaults that are not defaults in vim
 filetype plugin indent on
 syntax on
-
+set autoindent
+set smarttab
+set backspace=indent,eol,start
+set ruler
+set autoread
+set laststatus=2
+set hlsearch
 set wildmenu
+
 set path+=**
 set number
 set hidden
@@ -13,17 +21,14 @@ set linebreak
 set winwidth=90
 set directory=$HOME/.local/share/vim/swap
 set foldmethod=marker
-set nojoinspaces
 set splitbelow
 set splitright
+set complete-=it
+set guicursor=
+
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-set complete-=t
-set hlsearch
-set laststatus=2
-set showcmd
-set guicursor=
 
 if has('termguicolors')
     set termguicolors
