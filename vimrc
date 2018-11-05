@@ -24,7 +24,7 @@ set splitbelow
 set splitright
 set complete-=it
 set guicursor=
-set showtabline=0
+set showtabline=1
 
 set expandtab
 set shiftwidth=4
