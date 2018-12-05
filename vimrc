@@ -109,6 +109,7 @@ let g:rainbow_conf = {
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', 'while', 'reg-sub'
   \ ]
+let g:clojure_align_subforms = 1
 
 let g:ale_lint_on_text_changed = 'never'
 
