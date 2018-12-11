@@ -44,11 +44,7 @@ map <F4> :nohl<cr>
 autocmd VimResized * redraw!
 
 " Deletes all trailing whitespace in a file
-function! DeleteTrailingWhiteSpace()
-    exec ':%s/\s\+$//'
-    exec ':nohlsearch'
-endfunction
-map <leader>d :call DeleteTrailingWhiteSpace()<cr>
+map <leader>d :%s/\s\+$//<cr>
 
 " Renames the current file
 function! RenameFile()
