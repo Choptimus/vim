@@ -38,13 +38,13 @@ endif
 let mapleader = ","
 let maplocalleader = "\\"
 
-map <leader>ed :edit %:h
-map <F4> :nohl<cr>
+nnoremap <leader>ed :edit %:h
+nnoremap <F4> :nohl<cr>
 
 autocmd VimResized * redraw!
 
 " Deletes all trailing whitespace in a file
-map <leader>d :%s/\s\+$//<cr>
+nnoremap <leader>d :%s/\s\+$//<cr>
 
 " Renames the current file
 function! RenameFile()
@@ -56,7 +56,7 @@ function! RenameFile()
         redraw!
     endif
 endfunction
-map <leader>n :call RenameFile()<cr>
+nnoremap <leader>n :call RenameFile()<cr>
 
 " fzy
 function! FzyCommand(choice_command, vim_command) abort
@@ -87,11 +87,11 @@ function! FzyCommand(choice_command, vim_command) abort
 endfunction
 
 if executable('ag')
-    map <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
+    nnoremap <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
 else
-    map <c-p> :call FzyCommand("find -type f", ":e")<cr>
+    nnoremap <c-p> :call FzyCommand("find -type f", ":e")<cr>
 endif
-map <leader>t :call FzyCommand("cat tags \| awk '{print $1}' \| uniq", ":tag")<cr>
+nnoremap <leader>t :call FzyCommand("cat tags \| awk '{print $1}' \| uniq", ":tag")<cr>
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
