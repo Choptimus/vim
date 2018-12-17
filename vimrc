@@ -2,6 +2,8 @@ execute pathogen#infect()
 
 set nocompatible
 
+runtime macros/matchit.vim
+
 " These are nvim defaults that are not defaults in vim
 filetype plugin indent on
 syntax on
