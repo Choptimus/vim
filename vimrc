@@ -42,14 +42,14 @@ let maplocalleader = "\\"
 
 set wildcharm=<C-z>
 nnoremap <Leader>e :edit **/*<C-z><S-Tab>
-nnoremap <leader>h :edit %:h
+nnoremap <Leader>h :edit %:h
 nnoremap <Leader>f :find **/*<C-z><S-Tab>
-nnoremap <F4> :nohl<cr>
+nnoremap <F4> :nohl<CR>
 
 autocmd VimResized * redraw!
 
 " Deletes all trailing whitespace in a file
-nnoremap <leader>d :%s/\s\+$//<cr>
+nnoremap <Leader>d :%s/\s\+$//<CR>
 
 " Renames the current file
 function! RenameFile()
@@ -61,7 +61,7 @@ function! RenameFile()
         redraw!
     endif
 endfunction
-nnoremap <leader>n :call RenameFile()<cr>
+nnoremap <Leader>n :call RenameFile()<CR>
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
