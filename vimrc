@@ -40,7 +40,10 @@ endif
 let mapleader = ","
 let maplocalleader = "\\"
 
+set wildcharm=<C-z>
+nnoremap <Leader>e :edit **/*<C-z><S-Tab>
 nnoremap <leader>h :edit %:h
+nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <F4> :nohl<cr>
 
 autocmd VimResized * redraw!
