@@ -63,41 +63,6 @@ function! RenameFile()
 endfunction
 nnoremap <leader>n :call RenameFile()<cr>
 
-" fzy
-function! FzyCommand(choice_command, vim_command) abort
-    let l:callback = {
-                \ 'window_id': win_getid(),
-                \ 'filename': tempname(),
-                \ 'vim_command': a:vim_command
-                \ }
-
-    function! l:callback.on_exit(job_id, data, event) abort
-        bdelete!
-        call win_gotoid(self.window_id)
-        if filereadable(self.filename)
-            try
-                let l:selected_filename = readfile(self.filename)[0]
-                exec self.vim_command . ' ' . l:selected_filename
-            catch /E684/
-            endtry
-        endif
-        call delete(self.filename)
-    endfunction
-
-    botright 10 new
-    let l:term_command = a:choice_command . ' | fzy > ' .  l:callback.filename
-    silent call termopen(l:term_command, l:callback)
-    setlocal nonumber norelativenumber
-    startinsert
-endfunction
-
-if executable('ag')
-    nnoremap <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
-else
-    nnoremap <c-p> :call FzyCommand("find -type f", ":e")<cr>
-endif
-nnoremap <leader>t :call FzyCommand("cat tags \| awk '{print $1}' \| uniq", ":tag")<cr>
-
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
 autocmd BufRead,BufNewFile *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
