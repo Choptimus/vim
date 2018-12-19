@@ -16,7 +16,6 @@ set laststatus=2
 set hlsearch
 set wildmenu
 
-set path+=**
 set hidden
 set linebreak
 set winwidth=90
