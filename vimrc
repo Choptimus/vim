@@ -110,8 +110,3 @@ let g:clojure_fuzzy_indent_patterns = [
 let g:clojure_align_subforms = 1
 
 let g:ale_lint_on_text_changed = 'never'
-
-" Additional NON-PORTABLE config
-if filereadable('vimrc-local')
-    source $HOME/.vim/vimrc-local
-endif
