@@ -70,9 +70,9 @@ let g:rainbow_conf = {
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
   \ }
 
-" clojure syntax settings
 let g:clojure_fuzzy_indent_patterns = [
-  \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', 'while', 'reg-sub'
+  \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
+  \ '^reg-sub', '^do', '^try'
   \ ]
 let g:clojure_align_subforms = 1
 
