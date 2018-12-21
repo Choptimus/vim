@@ -1,1 +1,1 @@
-setlocal wildignore+=out/*
+setlocal wildignore+=out/*,target/*
