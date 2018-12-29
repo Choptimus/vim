@@ -72,7 +72,7 @@ let g:rainbow_conf = {
 
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
-  \ '^reg-sub', '^do', '^try'
+  \ '^reg-sub', '^do', '^try', '^cond'
   \ ]
 let g:clojure_align_subforms = 1
 
