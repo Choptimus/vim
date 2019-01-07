@@ -4,6 +4,10 @@ set nocompatible
 
 runtime macros/matchit.vim
 
+augroup mygroup
+    autocmd!
+augroup END
+
 " These are nvim defaults that are not defaults in vim
 filetype plugin indent on
 syntax on
@@ -64,7 +68,7 @@ nnoremap <Leader>n :call RenameFile()<CR>
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
-autocmd BufRead,BufNewFile *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
+autocmd mygroup BufNewFile,BufRead *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
 let g:rainbow_conf = {
   \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
