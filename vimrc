@@ -49,8 +49,6 @@ nnoremap <Leader>h :edit %:h/<C-z><S-Tab>
 nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <F4> :nohl<CR>
 
-autocmd mygroup VimResized * redraw!
-
 " Deletes all trailing whitespace in a file
 nnoremap <Leader>d :%s/\s\+$//<CR>
 
