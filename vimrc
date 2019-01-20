@@ -64,6 +64,11 @@ function! RenameFile()
 endfunction
 nnoremap <Leader>n :call RenameFile()<CR>
 
+if has('mac')
+    set path-=/usr/include
+    let &path .= "," . system("xcrun --show-sdk-path | tr -d '\n'") . "/usr/include"
+endif
+
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
 autocmd mygroup BufNewFile,BufRead *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
