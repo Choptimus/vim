@@ -47,6 +47,8 @@ set wildcharm=<C-z>
 nnoremap <Leader>e :edit **/*<C-z><S-Tab>
 nnoremap <Leader>h :edit %:h/<C-z><S-Tab>
 nnoremap <Leader>f :find **/*<C-z><S-Tab>
+nnoremap gb :ls<CR>:b<space>
+
 nnoremap <F4> :nohl<CR>
 
 " Deletes all trailing whitespace in a file
