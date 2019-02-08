@@ -36,7 +36,6 @@ set softtabstop=4
 
 if has('termguicolors')
     set termguicolors
-    set background=dark
     colorscheme onedark
 endif
 
