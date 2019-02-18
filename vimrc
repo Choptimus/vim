@@ -37,6 +37,7 @@ set softtabstop=4
 if has('termguicolors')
     set termguicolors
     colorscheme onedark
+    highlight Search guibg=NONE gui=underline guifg=LightYellow
 endif
 
 let mapleader = ","
