@@ -1,9 +1,6 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = https://github.com/tpope/vim-surround
 [submodule "bundle/vim-python-pep8-indent"]
 	path = bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent
@@ -16,6 +13,3 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale
-[submodule "bundle/vim-vinegar"]
-	path = bundle/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar
