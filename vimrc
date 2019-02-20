@@ -34,11 +34,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-if has('termguicolors')
-    set termguicolors
-    colorscheme onedark
-    highlight Search guibg=NONE gui=underline guifg=LightYellow
-endif
+colorscheme grb256
 
 let mapleader = ","
 let maplocalleader = "\\"
@@ -76,7 +72,7 @@ endif
 let g:rainbow_active = 0
 autocmd mygroup BufNewFile,BufRead *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
 let g:rainbow_conf = {
-  \ 'guifgs': ["#c678dd", "#61afef", "#98c379"],
+  \ 'guifgs': ['#ff73fd', '#96cbfe', '#a8ff60'],
   \ 'ctermfgs': ['magenta', 'blue', 'green'],
   \ }
 
