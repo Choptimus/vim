@@ -9,7 +9,7 @@ hi Comment ctermfg=lightgrey
 
 hi StatusLine ctermbg=darkgrey ctermfg=white
 hi StatusLineNC ctermbg=black ctermfg=lightgrey
-hi VertSplit ctermbg=black ctermfg=lightgrey
+hi VertSplit ctermbg=NONE ctermfg=lightgrey
 hi LineNr ctermfg=darkgray
 hi CursorLine       guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE       ctermbg=234    cterm=NONE
 hi Function         guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=yellow     ctermbg=NONE   cterm=NONE
