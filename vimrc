@@ -34,7 +34,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-colorscheme grb256
+colorscheme hy256
 
 let mapleader = ","
 let maplocalleader = "\\"
