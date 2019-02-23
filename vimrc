@@ -72,8 +72,7 @@ endif
 let g:rainbow_active = 0
 autocmd mygroup BufNewFile,BufRead *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
 let g:rainbow_conf = {
-  \ 'guifgs': ['#ff73fd', '#96cbfe', '#a8ff60'],
-  \ 'ctermfgs': ['magenta', 'blue', 'green'],
+  \ 'ctermfgs': ['darkblue', 'cyan', 'yellow'],
   \ }
 
 let g:clojure_fuzzy_indent_patterns = [
