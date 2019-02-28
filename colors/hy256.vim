@@ -3,4 +3,4 @@ runtime colors/grb256.vim
 
 hi Visual ctermbg=black
 
-hi schemeError guibg=None ctermbg=None
+hi schemeError guibg=NONE ctermbg=NONE
