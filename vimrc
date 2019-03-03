@@ -70,7 +70,9 @@ endif
 
 " Rainbow (mostly for clojure)
 let g:rainbow_active = 0
-autocmd mygroup BufNewFile,BufRead *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp RainbowToggleOn
+autocmd mygroup BufNewFile,BufRead
+            \ *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp,*.rkt
+            \ RainbowToggleOn
 let g:rainbow_conf = {
   \ 'ctermfgs': ['darkblue', 'cyan', 'yellow'],
   \ }
