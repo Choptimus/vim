@@ -19,6 +19,7 @@ set autoread
 set laststatus=2
 set hlsearch
 set wildmenu
+set showcmd
 
 set hidden
 set linebreak
