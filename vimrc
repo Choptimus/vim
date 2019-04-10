@@ -40,8 +40,7 @@ if has('termguicolors')
     colorscheme onedark
     let s:colors = onedark#GetColors()
     let g:rainbow_conf = {
-      \ 'guifgs': [s:colors.purple.gui, s:colors.blue.gui,
-      \            s:colors.red.gui, s:colors.green.gui]
+      \ 'guifgs': [s:colors.purple.gui, s:colors.blue.gui, s:colors.green.gui]
       \ }
 endif
 
