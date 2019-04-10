@@ -35,7 +35,16 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-colorscheme hy256
+if has('termguicolors')
+    set termguicolors
+    colorscheme onedark
+    let s:colors = onedark#GetColors()
+    let g:rainbow_conf = {
+      \ 'guifgs': [s:colors.purple.gui, s:colors.blue.gui,
+      \            s:colors.red.gui, s:colors.green.gui]
+      \ }
+endif
+
 
 let mapleader = ","
 let maplocalleader = "\\"
@@ -74,9 +83,6 @@ let g:rainbow_active = 0
 autocmd mygroup BufNewFile,BufRead
             \ *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp,*.rkt
             \ RainbowToggleOn
-let g:rainbow_conf = {
-  \ 'ctermfgs': ['darkblue', 'cyan', 'yellow'],
-  \ }
 
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
