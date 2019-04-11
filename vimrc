@@ -35,7 +35,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-if has('termguicolors')
+if has('nvim')
     set termguicolors
     colorscheme onedark
     let s:colors = onedark#GetColors()
