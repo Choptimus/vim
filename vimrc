@@ -44,7 +44,6 @@ if has('termguicolors')
       \ }
 endif
 
-
 let mapleader = ","
 let maplocalleader = "\\"
 
