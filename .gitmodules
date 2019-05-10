@@ -13,3 +13,9 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = git@github.com:guns/vim-sexp.git
+[submodule "bundle/vim-sexp-mappings-for-regular-people"]
+	path = bundle/vim-sexp-mappings-for-regular-people
+	url = git@github.com:tpope/vim-sexp-mappings-for-regular-people.git
