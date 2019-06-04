@@ -8,6 +8,9 @@ augroup mygroup
     autocmd!
 augroup END
 
+" https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
+set nomodeline
+
 " These are nvim defaults that are not defaults in vim
 filetype plugin indent on
 syntax on
