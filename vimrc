@@ -39,6 +39,7 @@ set shiftwidth=4
 set softtabstop=4
 
 if has('nvim')
+    set inccommand=nosplit
     set termguicolors
     colorscheme onedark
     let s:colors = onedark#GetColors()
