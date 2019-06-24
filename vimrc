@@ -55,7 +55,7 @@ set wildcharm=<C-z>
 nnoremap <Leader>e :edit **/*<C-z><S-Tab>
 nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <Leader>h :edit %:h<C-z>
-nnoremap gb :ls<CR>:b<Space>
+nnoremap <Leader>b :ls<CR>:b<Space>
 nnoremap <Leader>t :tabs<CR>:tabn<Space>
 
 nnoremap <F4> :nohl<CR>
