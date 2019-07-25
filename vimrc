@@ -26,7 +26,6 @@ set showcmd
 
 set hidden
 set linebreak
-set winwidth=90
 set foldmethod=marker
 set splitbelow
 set splitright
