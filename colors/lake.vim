@@ -11,7 +11,7 @@ let g:colors_name = 'lake'
 
 let s:fg = '#a6b2bb'
 let s:bg = '#273941'
-let s:gray0 = '#2a4957'
+let s:gray0 = '#294450'
 let s:gray1 = '#405f6d'
 let s:gray2 = '#608190'
 let s:red = '#a66363'
@@ -64,7 +64,7 @@ call s:h('Search', s:bg, s:orange, 'none')
 call s:h('Special', s:green, s:bg, 'none')
 call s:h('SpecialKey', s:bg, s:bg, 'none')
 call s:h('Statement', s:blue, s:bg, 'none')
-call s:h('StatusLine', s:fg, s:gray1, 'bold')
+call s:h('StatusLine', s:fg, s:gray1, 'none')
 call s:h('StatusLineNC', s:fg, s:gray0, 'none')
 call s:h('String', s:green, s:bg, 'none')
 call s:h('TabLineSel', s:fg, s:bg, 'none')
