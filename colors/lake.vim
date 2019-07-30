@@ -9,7 +9,7 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'lake'
 
-let s:fg = '#b8bdc6'
+let s:fg = '#a6b2bb'
 let s:bg = '#273941'
 let s:gray0 = '#2a4957'
 let s:gray1 = '#405f6d'
@@ -72,7 +72,7 @@ call s:h('Todo', s:fg, s:red, 'none')
 call s:h('Type', s:blue, s:bg, 'none')
 call s:h('Underlined', s:bg, s:bg, 'underline')
 call s:h('VertSplit', s:gray1, s:bg, 'none')
-call s:h('Visual', s:bg, s:gray1, 'none')
+call s:h('Visual', s:bg, s:gray2, 'none')
 call s:h('WarningMsg', s:yellow, s:bg, 'none')
 
 call s:h('clojureKeyword', s:bright_blue, s:bg, '')
