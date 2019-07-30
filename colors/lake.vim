@@ -1,10 +1,6 @@
-" ┏━┓╻ ╻┏┓ ╻  ┏━┓╻ ╻   ╻ ╻╻┏┳┓
-" ┗━┓┣━┫┣┻┓┃  ┣━┫┣━┫   ┃┏┛┃┃┃┃
-" ┗━┛╹ ╹┗━┛┗━╸╹ ╹╹ ╹ ╹ ┗┛ ╹╹ ╹
-"                           -- by z3bra
-" =====================================
-"
-" A 16 colors scheme that use your terminal colors
+" Lake
+" A color scheme based on Tudurom's cloudy color palette and z3bra's shblah.vim.
+" Only works with gvim or truecolor terminals.
 
 set background=dark
 highlight clear
@@ -13,13 +9,13 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'lake'
 
-let s:fg = '#c0c5ce'
+let s:fg = '#b8bdc6'
 let s:bg = '#273941'
 let s:bright_black = '#456472'
 let s:red = '#a66363'
 let s:green = '#63a690'
 let s:yellow = '#a6a663'
-let s:blue = '#6385a6'
+let s:blue = '#719bc2'
 let s:orange = '#bf9c86'
 let s:cyan = '#63a69b'
 let s:bright_red = '#c27171'
@@ -68,7 +64,7 @@ call s:h('SpecialKey', s:bg, s:bg, 'none')
 call s:h('Statement', s:blue, s:bg, 'none')
 call s:h('StatusLine', s:fg, s:bright_black, 'bold')
 call s:h('StatusLineNC', s:fg, s:bright_black, 'none')
-call s:h('String', s:bright_green, s:bg, 'none')
+call s:h('String', s:green, s:bg, 'none')
 call s:h('TabLineSel', s:fg, s:bg, 'none')
 call s:h('Todo', s:fg, s:red, 'none')
 call s:h('Type', s:blue, s:bg, 'none')
