@@ -11,7 +11,9 @@ let g:colors_name = 'lake'
 
 let s:fg = '#b8bdc6'
 let s:bg = '#273941'
-let s:bright_black = '#456472'
+let s:gray0 = '#2a4957'
+let s:gray1 = '#405f6d'
+let s:gray2 = '#608190'
 let s:red = '#a66363'
 let s:green = '#63a690'
 let s:yellow = '#a6a663'
@@ -39,7 +41,7 @@ endfun
 
 " Actual colours and styles.
 call s:h('ColorColumn', s:bg, s:yellow, 'none')
-call s:h('Comment', s:bright_black, s:bg, 'none')
+call s:h('Comment', s:gray2, s:bg, 'none')
 call s:h('Constant', s:orange, s:bg, 'none')
 call s:h('Cursor', '', s:fg, 'none') 
 call s:h('DiffAdd', s:green, s:bg, 'none')
@@ -54,7 +56,7 @@ call s:h('Folded', s:bg, s:bg, 'none')
 call s:h('Function', s:fg, s:bg, 'none')
 call s:h('Identifier', s:fg, s:bg, 'none')
 call s:h('IncSearch', s:bg, s:orange, 'none')
-call s:h('NonText', s:bright_black, s:bg, 'none')
+call s:h('NonText', s:gray1, s:bg, 'none')
 call s:h('Normal', s:fg, s:bg, 'none')
 call s:h('Pmenu', s:bg, s:fg, 'none')
 call s:h('PreProc', s:cyan, s:bg, 'none')
@@ -62,15 +64,15 @@ call s:h('Search', s:bg, s:orange, 'none')
 call s:h('Special', s:green, s:bg, 'none')
 call s:h('SpecialKey', s:bg, s:bg, 'none')
 call s:h('Statement', s:blue, s:bg, 'none')
-call s:h('StatusLine', s:fg, s:bright_black, 'bold')
-call s:h('StatusLineNC', s:fg, s:bright_black, 'none')
+call s:h('StatusLine', s:fg, s:gray1, 'bold')
+call s:h('StatusLineNC', s:fg, s:gray0, 'none')
 call s:h('String', s:green, s:bg, 'none')
 call s:h('TabLineSel', s:fg, s:bg, 'none')
 call s:h('Todo', s:fg, s:red, 'none')
 call s:h('Type', s:blue, s:bg, 'none')
 call s:h('Underlined', s:bg, s:bg, 'underline')
-call s:h('VertSplit', s:bright_black, s:bg, 'none')
-call s:h('Visual', s:bg, s:bright_black, 'none')
+call s:h('VertSplit', s:gray1, s:bg, 'none')
+call s:h('Visual', s:bg, s:gray1, 'none')
 call s:h('WarningMsg', s:yellow, s:bg, 'none')
 
 call s:h('clojureKeyword', s:bright_blue, s:bg, '')
