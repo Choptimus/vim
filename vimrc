@@ -40,8 +40,8 @@ set softtabstop=4
 if has('nvim')
     set inccommand=nosplit
     set termguicolors
-    colorscheme quantum
-    let g:rainbow_conf = {'guifgs': ['#a48add', '#70ace5', '#87bb7c']}
+    colorscheme lake
+    let g:rainbow_conf = {'guifgs': ['#63a690', '#719bc2', '#bf9c86']}
 endif
 
 let mapleader = ","
