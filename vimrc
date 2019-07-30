@@ -19,7 +19,7 @@ set smarttab
 set backspace=indent,eol,start
 set ruler
 set autoread
-set laststatus=2
+set laststatus=1
 set hlsearch
 set wildmenu
 set showcmd
