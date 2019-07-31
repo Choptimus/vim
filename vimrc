@@ -32,6 +32,7 @@ set splitright
 set complete-=it
 set guicursor=
 set showtabline=0
+set undofile
 
 set expandtab
 set shiftwidth=4
