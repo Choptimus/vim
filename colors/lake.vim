@@ -2,6 +2,24 @@
 " A color scheme based on Tudurom's cloudy color palette and z3bra's shblah.vim.
 " Only works with gvim or truecolor terminals.
 
+" Original cloudy colors
+" #273941 bg
+" #a66363 red
+" #63a690 green
+" #a6a663 yellow
+" #6385a6 blue
+" #bf9c86 orange
+" #63a69b cyan
+" #c0c5ce fg
+" #456472 bright black
+" #c27171 bright red
+" #6dc2a3 bright green
+" #bfc271 bright yellow
+" #719bc2 bright blue
+" #bf9c86 orange
+" #71c2af bright cyan
+" #eff1f5 white
+
 set background=dark
 highlight clear
 if exists('syntax_on')
