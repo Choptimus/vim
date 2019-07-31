@@ -9,8 +9,8 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'lake'
 
-let s:fg = '#a6b2bb'
-let s:bg = '#273941'
+let s:fg = '#a9b6c1'
+let s:bg = '#22333a'
 let s:gray0 = '#294450'
 let s:gray1 = '#405f6d'
 let s:gray2 = '#608190'
