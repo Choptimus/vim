@@ -42,7 +42,10 @@ if has('nvim')
     set inccommand=nosplit
     set termguicolors
     colorscheme lake
-    let g:rainbow_conf = {'guifgs': ['#63a690', '#719bc2', '#bf9c86']}
+    let blue = '#719bc2'
+    let green = '#63a690'
+    let bright_cyan = '#71c2af'
+    let g:rainbow_conf = {'guifgs': [blue, green, bright_cyan]}
 endif
 
 let mapleader = ","
