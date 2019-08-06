@@ -40,6 +40,9 @@ set softtabstop=4
 
 if has('nvim')
     set inccommand=nosplit
+endif
+
+if has('termguicolors')
     set termguicolors
     colorscheme lake
     let blue = '#719bc2'
