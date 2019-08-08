@@ -8,10 +8,6 @@ augroup mygroup
     autocmd!
 augroup END
 
-" https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
-set nomodeline
-
-" These are nvim defaults that are not defaults in vim
 filetype plugin indent on
 syntax on
 set autoindent
@@ -24,7 +20,6 @@ set hlsearch
 set incsearch
 set wildmenu
 set showcmd
-
 set hidden
 set linebreak
 set foldmethod=marker
@@ -34,7 +29,6 @@ set complete-=it
 set guicursor=
 set showtabline=0
 set undofile
-
 set expandtab
 set shiftwidth=4
 set softtabstop=4
