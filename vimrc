@@ -21,6 +21,7 @@ set ruler
 set autoread
 set laststatus=1
 set hlsearch
+set incsearch
 set wildmenu
 set showcmd
 
