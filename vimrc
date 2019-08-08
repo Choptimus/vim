@@ -41,6 +41,12 @@ set softtabstop=4
 
 if has('nvim')
     set inccommand=nosplit
+else
+    if empty($XDG_DATA_HOME)
+        let $XDG_DATA_HOME = $HOME . "/.local/share"
+    endif
+    set directory=$XDG_DATA_HOME/vim/swap//
+    set undodir=$XDG_DATA_HOME/vim/undo
 endif
 
 if has('termguicolors')
