@@ -46,10 +46,6 @@ endif
 if has('termguicolors')
     set termguicolors
     colorscheme lake
-    let blue = '#719bc2'
-    let green = '#63a690'
-    let bright_cyan = '#71c2af'
-    let g:rainbow_conf = {'guifgs': [blue, green, bright_cyan]}
 endif
 
 let mapleader = ","
@@ -83,12 +79,6 @@ if has('mac')
     set path-=/usr/include
     let &path .= "," . system("xcrun --show-sdk-path | tr -d '\n'") . "/usr/include"
 endif
-
-" Rainbow (mostly for clojure)
-let g:rainbow_active = 0
-autocmd mygroup BufNewFile,BufRead
-            \ *.clj,*.cljs,*.cljc,*.edn,*.scm,*.lisp,*.rkt
-            \ RainbowToggleOn
 
 let g:clojure_fuzzy_indent_patterns = [
   \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
