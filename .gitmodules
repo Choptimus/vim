@@ -22,3 +22,9 @@
 [submodule "lake"]
 	path = lake
 	url = https://github.com/chopptimus/lake
+[submodule "pack/default/start/vim-dispatch"]
+	path = pack/default/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "pack/default/start/vim-jack-in"]
+	path = pack/default/start/vim-jack-in
+	url = https://github.com/clojure-vim/vim-jack-in
