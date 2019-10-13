@@ -26,7 +26,6 @@ set splitright
 set complete-=it
 set guicursor=
 set showtabline=0
-set undofile
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -37,8 +36,15 @@ else
     if empty($XDG_DATA_HOME)
         let $XDG_DATA_HOME = $HOME . "/.local/share"
     endif
-    set directory=$XDG_DATA_HOME/vim/swap//
-    set undodir=$XDG_DATA_HOME/vim/undo
+
+    if isdirectory($XDG_DATA_HOME . "/vim/swap/")
+        set directory=$XDG_DATA_HOME/vim/swap//
+    endif
+
+    if isdirectory($XDG_DATA_HOME . "/vim/undo/")
+        set undofile
+        set undodir=$XDG_DATA_HOME/vim/undo/
+    endif
 endif
 
 if has('termguicolors')
