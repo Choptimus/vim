@@ -30,7 +30,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-if has('nvim')
+if has("nvim")
     set inccommand=nosplit
 else
     if empty($XDG_DATA_HOME)
@@ -47,7 +47,7 @@ else
     endif
 endif
 
-if has('termguicolors')
+if has("termguicolors")
     set termguicolors
     colorscheme lake
 endif
@@ -69,28 +69,28 @@ nnoremap <Leader>d :%s/\s\+$//<CR>
 
 " Renames the current file
 function! RenameFile()
-    let old_name = expand('%')
-    let new_name = input('New file name: ', expand('%'), 'file')
-    if new_name != '' && new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
+    let old_name = expand("%")
+    let new_name = input("New file name: ", expand("%"), "file")
+    if new_name != "" && new_name != old_name
+        exec ":saveas " . new_name
+        exec ":silent !rm " . old_name
         redraw!
     endif
 endfunction
 nnoremap <Leader>n :call RenameFile()<CR>
 
-if has('mac')
+if has("mac")
     set path-=/usr/include
     let &path .= "," . system("xcrun --show-sdk-path | tr -d '\n'") . "/usr/include"
 endif
 
 let g:clojure_fuzzy_indent_patterns = [
-  \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
-  \ '^reg-sub', '^do', '^try', '^cond'
+  \ "^with", "^def", "^let", "^comment", "^loop", "^go-loop", "^while",
+  \ "^reg-sub", "^do", "^try", "^cond"
   \ ]
 let g:clojure_align_subforms = 1
 
-let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_text_changed = "never"
 nnoremap <F5> :ALEToggleBuffer<CR>
 
 let g:netrw_banner = 0
