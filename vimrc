@@ -9,6 +9,9 @@ augroup END
 filetype plugin indent on
 syntax on
 set autoindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 set smarttab
 set backspace=indent,eol,start
 set ruler
@@ -26,9 +29,6 @@ set splitright
 set complete-=it
 set guicursor=
 set showtabline=0
-set expandtab
-set shiftwidth=4
-set softtabstop=4
 
 if has("nvim")
     set inccommand=nosplit
