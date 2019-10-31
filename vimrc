@@ -45,6 +45,9 @@ else
         set undofile
         set undodir=$XDG_DATA_HOME/vim/undo/
     endif
+
+    runtime ftplugin/man.vim
+    set keywordprg=:Man
 endif
 
 if has("termguicolors")
