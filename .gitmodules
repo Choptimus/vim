@@ -1,30 +1,30 @@
-[submodule "bundle/vim-fireplace"]
+[submodule "vim-fireplace"]
 	path = pack/default/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace
-[submodule "bundle/vim-python-pep8-indent"]
+[submodule "vim-python-pep8-indent"]
 	path = pack/default/start/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent
-[submodule "bundle/vim-fugitive"]
+[submodule "vim-fugitive"]
 	path = pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/ale"]
+[submodule "ale"]
 	path = pack/default/start/ale
 	url = https://github.com/w0rp/ale
-[submodule "bundle/vim-sexp"]
+[submodule "vim-sexp"]
 	path = pack/default/start/vim-sexp
 	url = https://github.com/guns/vim-sexp
-[submodule "bundle/vim-sexp-mappings-for-regular-people"]
+[submodule "vim-sexp-mappings-for-regular-people"]
 	path = pack/default/start/vim-sexp-mappings-for-regular-people
 	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
-[submodule "bundle/vim-vinegar"]
+[submodule "vim-vinegar"]
 	path = pack/default/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
 [submodule "lake"]
 	path = lake
 	url = https://github.com/chopptimus/lake
-[submodule "pack/default/start/vim-dispatch"]
+[submodule "vim-dispatch"]
 	path = pack/default/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
-[submodule "pack/default/start/vim-jack-in"]
+[submodule "vim-jack-in"]
 	path = pack/default/start/vim-jack-in
 	url = https://github.com/clojure-vim/vim-jack-in
