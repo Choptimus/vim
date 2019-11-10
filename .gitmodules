@@ -28,3 +28,6 @@
 [submodule "vim-jack-in"]
 	path = pack/default/start/vim-jack-in
 	url = https://github.com/clojure-vim/vim-jack-in
+[submodule "vim-slime"]
+	path = pack/default/start/vim-slime
+	url = https://github.com/jpalardy/vim-slime
