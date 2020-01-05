@@ -28,3 +28,6 @@
 [submodule "vim-jack-in"]
 	path = pack/default/start/vim-jack-in
 	url = https://github.com/clojure-vim/vim-jack-in
+[submodule "todo.txt-vim"]
+	path = pack/default/start/todo.txt-vim
+	url = https://github.com/freitass/todo.txt-vim
