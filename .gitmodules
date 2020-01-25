@@ -7,9 +7,6 @@
 [submodule "vim-fugitive"]
 	path = pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "ale"]
-	path = pack/default/start/ale
-	url = https://github.com/w0rp/ale
 [submodule "vim-sexp"]
 	path = pack/default/start/vim-sexp
 	url = https://github.com/guns/vim-sexp
