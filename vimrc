@@ -64,6 +64,10 @@ nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <Leader>h :edit %:h<C-z>
 nnoremap <Leader>b :ls<CR>:b<Space>
 nnoremap <Leader>t :tabs<CR>:tabn<Space>
+nnoremap <Leader>m :make<CR>:cwindow<CR><CR>
+nnoremap <Leader>a :cp<CR>
+nnoremap <Leader>s :cn<CR>
+nnoremap <Leader>q :cc<CR>
 
 nnoremap <F4> :nohl<CR>
 
