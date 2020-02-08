@@ -32,6 +32,7 @@ set showtabline=0
 
 if has("nvim")
     set inccommand=nosplit
+    set wildoptions-=pum
 else
     if empty($XDG_DATA_HOME)
         let $XDG_DATA_HOME = $HOME . "/.local/share"
