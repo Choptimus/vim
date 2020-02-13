@@ -29,6 +29,8 @@ set splitright
 set complete-=it
 set guicursor=
 set showtabline=0
+set ttimeout
+set ttimeoutlen=50
 
 if has("nvim")
     set inccommand=nosplit
