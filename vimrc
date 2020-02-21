@@ -100,9 +100,6 @@ let g:clojure_fuzzy_indent_patterns = [
   \ ]
 let g:clojure_align_subforms = 1
 
-let g:ale_lint_on_text_changed = "never"
-nnoremap <F5> :ALEToggleBuffer<CR>
-
 let g:netrw_banner = 0
 
 nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
