@@ -127,3 +127,6 @@ function! StrategiesPaths()
 endfunction
 
 autocmd mygroup BufRead * call StrategiesPaths()
+
+set path+=risq/**/*
+set path+=sportsrisq/**/*
