@@ -32,6 +32,8 @@ set showtabline=0
 set ttimeout
 set ttimeoutlen=50
 
+set path+=src/**/*
+
 if has("nvim")
     set inccommand=nosplit
     set wildoptions-=pum
