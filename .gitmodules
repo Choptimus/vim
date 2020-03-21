@@ -28,3 +28,6 @@
 [submodule "todo.txt-vim"]
 	path = pack/default/start/todo.txt-vim
 	url = https://github.com/freitass/todo.txt-vim
+[submodule "vim-cool"]
+	path = pack/default/start/vim-cool
+	url = https://github.com/romainl/vim-cool
