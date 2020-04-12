@@ -109,26 +109,3 @@ nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 autocmd mygroup BufNewFile,BufRead todo-work.txt set filetype=todo
-
-function! StrategiesPaths()
-    if fnamemodify(getcwd(), ":t") == "strategies"
-        setlocal path+=betapi/**/*
-        setlocal path+=djv/**/*
-        setlocal path+=dog/**/*
-        setlocal path+=ep/**/*
-        setlocal path+=hop/**/*
-        setlocal path+=inj/**/*
-        setlocal path+=mkm/**/*
-        setlocal path+=mnh/**/*
-        setlocal path+=nop/**/*
-        setlocal path+=replay/**/*
-        setlocal path+=tennis/**/*
-        setlocal path+=trading/**/*
-        setlocal path+=utils/**/*
-    endif
-endfunction
-
-autocmd mygroup BufRead,DirChanged * call StrategiesPaths()
-
-set path+=risq/**/*
-set path+=sportsrisq/**/*
