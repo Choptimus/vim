@@ -31,3 +31,6 @@
 [submodule "vim-cool"]
 	path = pack/default/start/vim-cool
 	url = https://github.com/romainl/vim-cool
+[submodule "vim-repeat"]
+	path = pack/default/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
