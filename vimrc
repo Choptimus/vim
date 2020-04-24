@@ -75,8 +75,6 @@ nnoremap <Leader>a :cp<CR>
 nnoremap <Leader>s :cn<CR>
 nnoremap <Leader>q :cc<CR>
 
-nnoremap <F4> :nohl<CR>
-
 " Deletes all trailing whitespace in a file
 nnoremap <Leader>d :%s/\s\+$//<CR>
 
