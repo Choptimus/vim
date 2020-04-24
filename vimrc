@@ -65,6 +65,9 @@ let mapleader = ","
 let maplocalleader = "\<Space>"
 
 set wildcharm=<C-z>
+
+map Y y$ 
+
 nnoremap <Leader>e :edit **/*<C-z><S-Tab>
 nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <Leader>h :edit %:h<C-z>
