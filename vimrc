@@ -28,7 +28,6 @@ set foldmethod=marker
 set splitbelow
 set splitright
 set complete-=it
-set guicursor=
 set showtabline=0
 set ttimeout
 set ttimeoutlen=50
@@ -37,7 +36,6 @@ set path+=src/**/*
 
 if has('nvim')
     set inccommand=nosplit
-    set wildoptions-=pum
 else
     if empty($XDG_DATA_HOME)
         let $XDG_DATA_HOME = $HOME . '/.local/share'
