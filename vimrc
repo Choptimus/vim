@@ -67,15 +67,11 @@ set wildcharm=<C-z>
 map Y y$ 
 
 nnoremap <Leader>e :edit **/*<C-z><S-Tab>
-nnoremap <Leader>f :find **/*<C-z><S-Tab>
 nnoremap <Leader>h :edit %:h<C-z>
-nnoremap <Leader>b :ls<CR>:b<Space>
-nnoremap <Leader>t :tabs<CR>:tabn<Space>
 nnoremap <Leader>m :make<CR>:cwindow<CR>:cc<CR><ESC>
 nnoremap <Leader>a :cp<CR>
 nnoremap <Leader>s :cn<CR>
 nnoremap <Leader>q :cc<CR>
-
 nnoremap <Leader>d :%s/\s\+$//<CR>
 
 function! RenameFile()
