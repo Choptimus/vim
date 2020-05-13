@@ -16,9 +16,6 @@
 [submodule "vim-vinegar"]
 	path = pack/default/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
-[submodule "lake"]
-	path = lake
-	url = https://github.com/chopptimus/lake
 [submodule "vim-dispatch"]
 	path = pack/default/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch

@@ -55,11 +55,6 @@ else
     set keywordprg=:Man
 endif
 
-if has('termguicolors')
-    set termguicolors
-    colorscheme lake
-endif
-
 let mapleader = ','
 let maplocalleader = "\<Space>"
 
