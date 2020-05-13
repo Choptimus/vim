@@ -36,6 +36,7 @@ set path+=src/**/*
 
 if has('nvim')
     set inccommand=nosplit
+    set undofile
 else
     if empty($XDG_DATA_HOME)
         let $XDG_DATA_HOME = $HOME . '/.local/share'
