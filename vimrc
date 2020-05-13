@@ -61,7 +61,7 @@ if has('termguicolors')
 endif
 
 let mapleader = ','
-let maplocalleader = '\<Space>'
+let maplocalleader = "\<Space>"
 
 set wildcharm=<C-z>
 
