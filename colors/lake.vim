@@ -1,1 +1,0 @@
-../lake/colors/lake.vim
