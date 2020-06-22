@@ -55,20 +55,20 @@ else
     set keywordprg=:Man
 endif
 
-let mapleader = ','
-let maplocalleader = "\<Space>"
+let mapleader = "\<Space>"
+let maplocalleader = ','
 
 set wildcharm=<C-z>
 
 map Y y$ 
 
-nnoremap <Leader>e :edit **/*<C-z><S-Tab>
-nnoremap <Leader>h :edit %:h<C-z>
-nnoremap <Leader>m :make<CR>:cwindow<CR>:cc<CR><ESC>
-nnoremap <Leader>a :cp<CR>
-nnoremap <Leader>s :cn<CR>
-nnoremap <Leader>q :cc<CR>
-nnoremap <Leader>d :%s/\s\+$//<CR>
+nnoremap <Leader>f :edit **/*<C-z><S-Tab>
+nnoremap <Leader>e :edit %:h<C-z>
+nnoremap <LocalLeader>m :make<CR>:cwindow<CR>:cc<CR><ESC>
+nnoremap <LocalLeader>a :cp<CR>
+nnoremap <LocalLeader>s :cn<CR>
+nnoremap <LocalLeader>q :cc<CR>
+nnoremap <LocalLeader>d :%s/\s\+$//<CR>
 
 function! RenameFile()
     let old_name = expand('%')
