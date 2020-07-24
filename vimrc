@@ -70,6 +70,8 @@ nnoremap <LocalLeader>s :cn<CR>
 nnoremap <LocalLeader>q :cc<CR>
 nnoremap <LocalLeader>d :%s/\s\+$//<CR>
 
+cnoremap <C-g> <C-c>
+
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'), 'file')
