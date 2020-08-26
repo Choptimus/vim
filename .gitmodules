@@ -31,3 +31,6 @@
 [submodule "vim-repeat"]
 	path = pack/default/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "fzf"]
+	path = pack/default/start/fzf
+	url = https://github.com/junegunn/fzf
