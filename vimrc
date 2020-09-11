@@ -60,7 +60,7 @@ let maplocalleader = ','
 
 set wildcharm=<C-z>
 
-map Y y$ 
+map Y y$
 
 nnoremap <Leader>f :edit **/*<C-z><S-Tab>
 nnoremap <Leader>e :edit %:h<C-z>
@@ -70,7 +70,7 @@ nnoremap ]q :cnext<CR>
 nnoremap [q :cprevious<CR>
 nnoremap <LocalLeader>m :make<CR>:cwindow<CR>:cc<CR><ESC>
 nnoremap <LocalLeader>q :cc<CR>
-nnoremap <LocalLeader>d :%s/\s\+$//<CR>
+command! Dtw %s/\s\+$//
 
 cnoremap <C-g> <C-c>
 
