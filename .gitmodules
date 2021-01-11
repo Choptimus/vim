@@ -1,39 +1,6 @@
-[submodule "vim-fireplace"]
-	path = pack/default/start/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace
-[submodule "vim-python-pep8-indent"]
-	path = pack/default/start/vim-python-pep8-indent
-	url = https://github.com/Vimjas/vim-python-pep8-indent
-[submodule "vim-fugitive"]
-	path = pack/default/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "vim-sexp"]
-	path = pack/default/start/vim-sexp
-	url = https://github.com/guns/vim-sexp
-[submodule "vim-sexp-mappings-for-regular-people"]
-	path = pack/default/start/vim-sexp-mappings-for-regular-people
-	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
-[submodule "vim-vinegar"]
-	path = pack/default/start/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar
-[submodule "vim-dispatch"]
-	path = pack/default/start/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch
-[submodule "vim-jack-in"]
-	path = pack/default/start/vim-jack-in
-	url = https://github.com/clojure-vim/vim-jack-in
-[submodule "todo.txt-vim"]
-	path = pack/default/start/todo.txt-vim
-	url = https://github.com/freitass/todo.txt-vim
 [submodule "vim-cool"]
 	path = pack/default/start/vim-cool
 	url = https://github.com/romainl/vim-cool
-[submodule "vim-repeat"]
-	path = pack/default/start/vim-repeat
-	url = https://github.com/tpope/vim-repeat
 [submodule "fzf"]
 	path = pack/default/start/fzf
 	url = https://github.com/junegunn/fzf
-[submodule "vim-surround"]
-	path = pack/default/start/vim-surround
-	url = https://github.com/tpope/vim-surround

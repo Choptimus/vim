@@ -90,16 +90,8 @@ if has('mac')
     let &path .= ',' . system("xcrun --show-sdk-path | tr -d '\n'") . '/usr/include'
 endif
 
-let g:clojure_fuzzy_indent_patterns = [
-  \ '^with', '^def', '^let', '^comment', '^loop', '^go-loop', '^while',
-  \ '^reg-sub', '^do', '^try', '^cond'
-  \ ]
-let g:clojure_align_subforms = 1
-
 let g:netrw_banner = 0
 
 nnoremap <F10> :echo 'hi<' . synIDattr(synID(line('.'),col('.'),1),'name') . '> trans<'
 \ . synIDattr(synID(line('.'),col('.'),0),'name') . '> lo<'
 \ . synIDattr(synIDtrans(synID(line('.'),col('.'),1)),'name') . '>'<CR>
-
-autocmd mygroup BufNewFile,BufRead todo-work.txt set filetype=todo
